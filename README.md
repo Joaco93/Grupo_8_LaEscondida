@@ -1,4 +1,4 @@
-Nombre de la empresa: La Escondida 
+git commitNombre de la empresa: La Escondida 
 
 Integrantes 
 
