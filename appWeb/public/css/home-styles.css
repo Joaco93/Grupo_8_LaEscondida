@@ -15,7 +15,6 @@ header{
    width: 100%;
    margin: 0px 0px 10px 0px;
    padding: 20px;
-  /* position: fixed;*/
    background-color: #285A71;
 }
 
@@ -38,16 +37,37 @@ div.logo{
    justify-content: center;
 }
 
+div.logo img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
 div.user{
-    display: flex;
     width: 30%;
-    flex-direction: row;
-    justify-content: flex-end;
+} 
+
+div.user ul{
+  width: 100%;
+  position: relative;
+}
+
+div.user ul li{
+  margin: 5px 0px 5px 3px;  
+}
+
+div.user ul li a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .fa-user{
     color: #ffffff;
     font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 form.search{
@@ -65,6 +85,7 @@ form.search input{
 
 .fa-search{
    margin-left: 3px;
+   color: #ffffff;
 }
 
 .container{
@@ -77,6 +98,46 @@ ul, li {
     list-style: none;
 }
 
+footer{
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  border: solid 2px #000000;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-shop{
+    width: 20%;
+    margin: 0px 5px 5px 5px;
+    display: none;
+}
+
+.footer-laEscondida{
+   width: 20%;
+   margin: 0px 5px 5px 5px;
+}
+
+.footer-email{
+  width: 30%;
+  margin: 0px 5px 5px 5px;
+  display: none;
+}
+
+.footer-redesSociales{
+  width: 30%;
+  margin: 0px 5px 5px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer div.footer-redesSociales img{
+    object-fit: contain;
+}
+
 @media (min-width: 550px){
     div.cart{
         flex-direction:row;
@@ -87,12 +148,16 @@ ul, li {
         color: #ffffff;
         font-size: 50px;
      }
+     
+    div.user ul{
+        left: 65%;
+    }
 
-     .fa-user{
+    .fa-user{
         color: #ffffff;
         font-size: 50px;
-    }
-    
+    } 
+
     form.search input{
         font-size: medium;
         width: 70%;
@@ -102,8 +167,20 @@ ul, li {
     .container{
         display: flex;
         margin: auto;
-        width: 85%;
-        height: 55%;
+        width: 90%;
+        height: 300px;
         background-color: #ffffff;
+    }
+
+    footer{
+        height: 340px;
+    }
+    
+    .footer-shop{
+        display: block;
+    }
+
+    .footer-email{
+      display: block;
     }
 }
