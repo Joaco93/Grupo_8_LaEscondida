@@ -10,57 +10,60 @@ body{
 }
 
 header{
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
-   margin: 0px 0px 10px 0px;
-   padding: 20px;
-   background-color: #285A71;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #285A71;
 }
 
 div.cart{
-   display: flex;
-   width: 30%;
-   flex-direction:row;
-   justify-content: flex-start;
+    display: flex;
+    width: 20%;
+    flex-direction:row;
+    justify-content: flex-start;
 }
 
 .fa-shopping-cart{
-   color: #ffffff;
-   font-size: 25px;
+    color: #ffffff;
+    font-size: 25px;
 }
 
 div.logo{
-   display: flex;
-   width: 40%;
-   flex-direction: row;
-   justify-content: center;
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: center;
 }
 
 div.logo img{
-    width: 100%;
-    height: 80%;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
 }
 
 div.user{
-    width: 30%;
+    width: 20%;
 } 
 
 div.user ul{
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
+    left: -5px;
+    font-size: 12px;
 }
-
+  
 div.user ul li{
-  margin: 5px 0px 5px 3px;  
+    list-style-type: none;
+    margin: 5px 0px 5px 3px;  
 }
-
+  
 div.user ul li a{
     text-decoration: none;
     color: #ffffff;
 }
-
+  
 .fa-user{
     color: #ffffff;
     font-size: 25px;
@@ -71,95 +74,116 @@ div.user ul li a{
 }
 
 form.search{
-   display: flex;
-   justify-content: center;
-   margin: 30px 0px 15px 0px;
-   width: 100%;
-}
-
-form.search input{
-   font-size: medium;
-   width: 50%;
-   border-radius: 5px;
-}
-
-.fa-search{
-   margin-left: 3px;
-   color: #ffffff;
-}
-
-.container{
-   display: none;
-}
-  
-ul, li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-}
-  
-ul.slider{
-    position: relative;
-    width: 800px;
-    height: 300px;
-}
-  
-ul.slider li {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      opacity: 0;
-      width: inherit;
-      height: inherit;
-      transition: opacity .5s;
-      background:#fff;
-}
-  
-ul.slider li img{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 15px 0px;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
 }
-  
-ul.slider li:first-child {
-      opacity: 1; 
+ 
+form.search input{
+    font-size: medium;
+    width: 50%;
+    border-radius: 5px;
 }
-  
-ul.slider li:target {
-      opacity: 1; 
+ 
+.fa-search{
+    margin-left: 3px;
+    color: #ffffff;
 }
-  
-.menu{
-    text-align: center;
-    margin: 20px;
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
 }
-  
-menu li{
-    display: inline-block;
-    text-align: center;
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
 }
-  
-.menu li a{
-    display: inline-block;
-    color: white;
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+section{
+   width: 95%;
+   padding: 10px;
+}
+
+section ul{
+   padding: 0;
+   margin: auto;
+   width: 30%;
+}
+
+section ul li{
+    list-style: none;
+}
+
+section ul div{
+  margin-bottom: 5px;
+}
+
+section ul  div li a, div label a{
     text-decoration: none;
-    background-color: grey;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
+    color: #000000;
+}
+
+section ul div li img{
+  width: 100%;
+}
+
+section ul label{
+    font-size: 15px;
+}
+
+.product-cerveza,.product-vinos,.product-licores{
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+p .comentario{
+  font-size: 10px;
+  font-weight: lighter;
 }
 
 footer{
-  width: 90%;
-  height: 30%;
-  margin: auto;
-  border: solid 2px #000000;
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    border: solid 2px #000000;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: #000000;
 }
 
 .footer-shop{
@@ -167,47 +191,97 @@ footer{
     margin: 0px 5px 5px 5px;
     display: none;
 }
-
+  
 .footer-laEscondida{
-   width: 20%;
-   margin: 0px 5px 5px 5px;
+    width: 20%;
+    margin: 0px 5px 5px 5px;
+}
+  
+.footer-email{
+    width: 30%;
+    margin: 0px 5px 5px 5px;
+    display: none;
 }
 
-.footer-email{
-  width: 30%;
-  margin: 0px 5px 5px 5px;
-  display: none;
+form.footer-email input{
+    font-size: medium;
+    width: 70%;
+    border-radius: 5px;
 }
 
 .footer-redesSociales{
-  width: 30%;
-  margin: 0px 5px 5px 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+    width: 20%;
+    margin: 0px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
-
+  
 footer div.footer-redesSociales img{
-    object-fit: contain;
+    width: 32px;
+    height: 32px;
 }
 
-@media (min-width: 550px){
+.footer-metodosDePago{
+  text-align: center;
+  display: flex;
+  border-top: solid 2px #000000;
+  padding: 2px;
+}
+
+.copy-footer{
+    text-align: left;
+}
+
+.parrafo-footer{
+    line-height:1.5;
+}
+
+.icon-metodosDePago{
+    background-color: #4A34EB;
+    border-radius: 5px;
+    color: #FBFCFC;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 360px) {
+    div.user ul{
+        left: -12px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 481px){
+    header{
+        padding: 20px;
+    }
+
     div.cart{
+        width: 30%;
         flex-direction:row;
         justify-content: flex-start;
      }
 
     .fa-shopping-cart{
-        color: #ffffff;
         font-size: 50px;
-     }
-     
+    }
+
+    div.logo{
+        width: 40%;
+    }
+
+    div.user{
+        width: 30%;
+    } 
+
     div.user ul{
-        left: 65%;
+        left: 50%;
+        font-size: 18px;
     }
 
     .fa-user{
-        color: #ffffff;
         font-size: 50px;
     } 
 
@@ -217,29 +291,52 @@ footer div.footer-redesSociales img{
         border-radius: 5px;
     }
 
-    .container{
-        display: block;
-        margin: auto;
-        background-color: white;
-        width: 800px;
-        padding: 30px;
-    }
-
-    ul.slider{
-        position: relative;
-        width: 800px;
-        height: 300px;
-    }
-
-    footer{
-        height: 340px;
-    }
-    
     .footer-shop{
         display: block;
     }
 
     .footer-email{
       display: block;
+    }
+
+    
+}
+
+@media (min-width: 761px) {
+    div.user ul{
+        left: 70%;
+    }
+
+    .slider ul {
+        height: 400px;
+    }
+    
+    section ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .product-cerveza{
+        width: 30%;
+    }
+    
+    .product-vinos{
+        width: 30%;
+    }
+
+    .product-licores{
+       width: 30%;
+    }
+
+    .product-cerveza img,.product-vinos img,.product-licores img{
+       height: 250px;
+    }
+}
+
+@media (min-width: 1024px){
+    div.user ul{
+        left: 80%;
     }
 }

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Escondida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/home-styles.css">
 </head>
@@ -13,16 +16,16 @@
 <body>
     <header>
         <div class="cart">
-            <i class="fas fa-shopping-cart"></i>
+            <a href="/productCart"><i class="fas fa-shopping-cart"></a></i>
         </div>
 
         <div class="logo">
             <!--IMAGEN DEL LOGO-->
-            <img src="/images/laEscondida-logo.png" alt="Logo La Escondida">
+            <a href="/"><img src="/images/laEscondida-logo.png" alt="Logo La Escondida"></a>
         </div>
 
         <div class="user">
-            <i class="fas fa-user"></i>
+            <a href="/login"><i class="fas fa-user"></a></i>
             <ul>
                 <li><a href="/register">Registrarse</a></li>
                 <li><a href="/login">Login</a></li>
@@ -35,37 +38,45 @@
         </form>
     </header>
 
-    <section class="container">
+    <div class="slider">
 
-        <ul class="slider">
-            <li id="slide1">
-                <img src="/images/cervezas-varias.jpg" alt="Cervezas varias"/>
+        <ul>
+            <li>
+                <img src="/images/Para-el-home/tipos-de-vinos.jpg" alt="Cervezas varias" />
             </li>
-            <li id="slide2">
-                <img src="/images/tipos-de-vinos-tintos.jpg" alt="Vinos varios" />
+            <li>
+                <img src="/images/Para-el-home/cervezas-varias.jpg" alt="Cervezas varias" />
             </li>
-            <li id="slide3">
-                <img src="/images/bebidas-destiladas.png" alt="Bebidas Destiladas varias" />
+            <li>
+                <img src="/images/Para-el-home/tipos-de-vinos-tintos.jpg" alt="Vinos varios" />
+            </li>
+            <li>
+                <img src="/images/Para-el-home/bebidas-destiladas.png" alt="Bebidas Destiladas varias" />
             </li>
         </ul>
 
-        <ul class="menu">
-            <li>
-                <a href="#slide1">1</a>
-            </li>
-            <li>
-                <a href="#slide2">2</a>
-            </li>
-            <li>
-                <a href="#slide3">3</a>
-            </li>
-        </ul>
+    </div>
 
+    <section>
+        <ul>
+            <div class="product-cerveza">
+                <li><a href="/productDetail"><img src="/images/Para-el-home/cervezas.jpg" alt="Cervezas"></a></li>
+                <label><a href="/productDetail">CERVEZAS</a></label>
+
+            </div>
+
+            <div class="product-vinos">
+                <li><a href="/productDetail"><img src="/images/Para-el-home/vinos.jpg" alt="Vinos"></a></li>
+                <label><a href="/productDetail">VINOS</a></label>
+                <p class="comentario">Vinos tintos, blancos, rosados y espumantes</p>
+            </div>
+
+            <div class="product-licores">
+                <li><a href="/productDetail"><img src="/images/Para-el-home/licor.jpg" alt="Licores"></a></li>
+                <label><a href="/productDetail">LICORES</a></label>
+            </div>
+        </ul>
     </section>
-
-    <nav>
-
-    </nav>
 
     <footer>
         <div class="footer-shop">
@@ -100,14 +111,14 @@
             <h4>Metodos de pago</h4>
 
             <article>
-                <i class="fas fa-credit-card icon-footer"></i>
+                <i class="fas fa-credit-card icon-metodosDePago"></i>
                 <h3>Paga con tarjeta o efectivo</h3>
                 <p class="parrafo-footer">En La Escondida, tenés cuotas sin interés con tarjeta o efectivo en
                     forma de pago. ¡Y siempre es seguro!
                 </p>
             </article>
             <article>
-                <i class="fas fa-gift icon-footer"></i>
+                <i class="fas fa-truck icon-metodosDePago"></i>
                 <h3>Envío gratis desde $ 2.500</h3>
                 <p class="parrafo-footer">
                     Solo por estar registrad@ en La Escondida tenés envíos gratis en miles de
