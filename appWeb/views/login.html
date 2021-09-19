@@ -5,5 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>La Escondida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/home-styles.css">
 </head>
+
+<body>
+    <header>
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+
+        <div class="logo">
+            <!--IMAGEN DEL LOGO-->
+            <img src="/images/laEscondida-logo.png" alt="Logo La Escondida">
+        </div>
+
+        <div class="user">
+            <i class="fas fa-user"></i>
+            <ul>
+                <li><a href="/register">Registrarse</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+
+        <form action="/" method="POST" class="search">
+            <input type="search" name="buscador" placeholder="Buscar Productos...">
+            <i class="fas fa-search"></i>
+        </form>
+    </header>
+<body>
+  <section class="form-register">
+    <h4>Completa tus datos </h4>
+    <main>
+        <section>
+            <form action="/" method="POST" class="formlogin">
+                <input type="text" name="email" required placeholder="Tu dirección de correo">
+                <input type="password" name="password" required placeholder="Contraseña">
+                <p>¿Olvidaste tu contraseña?</p>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+  <footer>
+    <div class="footer-shop">
+        <h4>Tienda</h4>
+        <ul>
+            <li><a href="/productDetail">Cerveza</a></li>
+            <li><a href="/productDetail">Vinos</a></li>
+            <li><a href="/productDetail">Otras Bebidas</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-laEscondida">
+        <h4>La Escondida</h4>
+        <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+        </ul>
+    </div>
+
+    <form action="/" method="POST" class="footer-email">
+        <input type="email" name="email" placeholder="Dejanos tu email...">
+        <i class="far fa-envelope"></i>
+    </form>
+
+    <div class="footer-redesSociales">
+        <img src="/images/facebook.png" alt="Facebook">
+        <img src="/images/instagram.png" alt="Instagram">
+        <img src="/images/whatsapp.png" alt="whatsapp">
+    </div>
+
+    <section class="footer-metodosDePago">
+        <h4>Metodos de pago</h4>
+
+        <article>
+            <i class="fas fa-credit-card icon-footer"></i>
+            <h3>Paga con tarjeta o efectivo</h3>
+            <p class="parrafo-footer">En La Escondida, tenés cuotas sin interés con tarjeta o efectivo en
+                forma de pago. ¡Y siempre es seguro!
+            </p>
+        </article>
+        <article>
+            <i class="fas fa-gift icon-footer"></i>
+            <h3>Envío gratis desde $ 2.500</h3>
+            <p class="parrafo-footer">
+                Solo por estar registrad@ en La Escondida tenés envíos gratis en miles de
+                productos.
+            </p>
+        </article>
+    </section>
+
+</footer>
+</body>
