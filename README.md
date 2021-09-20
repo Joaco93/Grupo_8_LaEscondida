@@ -20,3 +20,4 @@ Sitios de referencia =         https://www.appbar.com.ar/catalogo?gclid=Cj0KCQjw
                                https://www.outletdebebidas.com.ar/
 
 
+Link Trello: https://trello.com/b/PLzRd4Mm/sprint-2
