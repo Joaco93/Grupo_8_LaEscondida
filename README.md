@@ -4,7 +4,7 @@ Integrantes
 
 Rocio Caballero
 Joaquin Fischer
-Ivan Caballero 
+Ivan ledesma 
 Lucas Montes
 
 
