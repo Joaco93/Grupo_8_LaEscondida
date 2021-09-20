@@ -6,4 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle de los productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/home-styles.css">
+    <link rel="stylesheet" href="/css/productDetail-styles.css">
 </head>
+
+<body>
+    <header>
+        <div class="cart">
+            <a href="/productCart"><i class="fas fa-shopping-cart"></a></i>
+        </div>
+
+        <div class="logo">
+            <!--IMAGEN DEL LOGO-->
+            <a href="/"><img src="/images/laEscondida-logo.png" alt="Logo La Escondida"></a>
+        </div>
+
+        <div class="user">
+            <a href="/login"><i class="fas fa-user"></a></i>
+            <ul>
+                <li><a href="/register">Registrarse</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+
+        <form action="/" method="POST" class="search">
+            <input type="search" name="buscador" placeholder="Buscar Productos...">
+            <i class="fas fa-search"></i>
+        </form>
+    </header>
+    
+    <h4>Productos relacionados</h4>
+    <div class="slider">
+
+        <ul>
+            <li>
+                <img src="/images/bebidas/cervezaKunstmann.png" alt="Cerveza Kunstmann" />
+            </li>
+            <li>
+                <img src="/images/bebidas/cervezaMiller.png" alt="Cerveza Miller" />
+            </li>
+            <li>
+                <img src="/images/bebidas/cervezaPatagonia.png" alt="Cerveza Patagonia" />
+            </li>
+            <li>
+                <img src="/images/bebidas/destiladoRedLabel.png" alt="Bebidas Destiladas varias" />
+            </li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <div class="footer-shop">
+            <h4>Tienda</h4>
+            <ul>
+                <li><a href="/productDetail">Cerveza</a></li>
+                <li><a href="/productDetail">Vinos</a></li>
+                <li><a href="/productDetail">Otras Bebidas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-laEscondida">
+            <h4>La Escondida</h4>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </div>
+
+        <form action="/" method="POST" class="footer-email">
+            <input type="email" name="email" placeholder="Dejanos tu email...">
+            <i class="far fa-envelope"></i>
+        </form>
+
+        <div class="footer-redesSociales">
+            <img src="/images/facebook.png" alt="Facebook">
+            <img src="/images/instagram.png" alt="Instagram">
+            <img src="/images/whatsapp.png" alt="whatsapp">
+        </div>
+
+        <section class="footer-metodosDePago">
+            <h4>Metodos de pago</h4>
+
+            <article>
+                <i class="fas fa-credit-card icon-metodosDePago"></i>
+                <h3>Paga con tarjeta o efectivo</h3>
+                <p class="parrafo-footer">En La Escondida, tenés cuotas sin interés con tarjeta o efectivo en
+                    forma de pago. ¡Y siempre es seguro!
+                </p>
+            </article>
+            <article>
+                <i class="fas fa-truck icon-metodosDePago"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p class="parrafo-footer">
+                    Solo por estar registrad@ en La Escondida tenés envíos gratis en miles de
+                    productos.
+                </p>
+            </article>
+        </section>
+    </footer>
+</body>

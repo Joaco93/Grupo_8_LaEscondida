@@ -1,0 +1,10 @@
+
+
+@media (min-width: 761px) {
+    
+  .slider li{
+    /*height: 200px;*/
+    object-fit: contain;
+   }
+
+}
