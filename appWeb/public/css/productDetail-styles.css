@@ -1,10 +1,262 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body{
+  background-color: #C4B7B4;
+  font-family: sans-serif;
+}
 
-@media (min-width: 761px) {
-    
-  .slider li{
-    /*height: 200px;*/
-    object-fit: contain;
-   }
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #285A71;
+  position: fixed;
+  top: 0;
+}
 
+div.cart{
+  display: flex;
+  width: 20%;
+  flex-direction:row;
+  justify-content: flex-end;
+}
+
+.fa-shopping-cart{
+  color: #ffffff;
+  font-size: 25px;
+}
+
+div.user{
+  width: 20%;
+} 
+
+div.user ul{
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+}
+
+div.user ul li, .navbar li{
+  list-style-type: none;
+  margin: 5px 0px 5px 3px;  
+}
+
+div.user ul li a,.navbar a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar ul{
+  padding: 5px 3px 0 3px;
+}
+
+.navbar li{
+  font-family: 'Roboto';
+}
+
+.fa-user{
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+form.search{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 15px 0px;
+  width: 60%;
+}
+
+form.search input{
+  font-size: medium;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.fa-search{
+  margin-left: 3px;
+  color: #ffffff;
+}
+
+.navbar{
+  width: 90%;
+  margin: auto;
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+section{
+  margin: 122px 10px 20px 10px;
+  background-color: #FBFCFC;
+  width: 95%;
+}
+
+section h4{
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+section article{
+   width: 95%;
+   margin: auto;
+   padding: 10px;
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   background-color: cadetblue;
+}
+
+section article div{
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 30px rgb(100, 100, 100);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section article div img{
+  width: 50%;
+  height: 200px;
+  object-fit: contain;
+}
+
+div.descripcion{
+  width: 50%;
+  padding: 5px;
+}
+
+.descripcion h5{
+   width: 100%;
+   font-weight: lighter;
+   font-size: 11px;
+}
+
+.descripcion h4{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.descripcion p{
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.descripcion form{
+  width: 100%;
+  margin-top:5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.descripcion label{
+  width: 50%;
+  padding: 5px 0px 3px 0px;
+  font-weight: bold;
+  margin: 5px 5px 7px 0px;
+}
+
+.descripcion input{
+   width: 40%;
+   margin: 5px 0 7px 0;
+   border-radius: 5px;
+}
+
+.descripcion button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+   background-color: #1C1D1B;
+   color: #ffffff;
+}
+
+footer{
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  border: solid 2px #000000;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer div ul li a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-shop{
+  width: 20%;
+  margin: 0px 5px 5px 5px;
+  display: none;
+}
+
+.footer-laEscondida{
+  width: 20%;
+  margin: 0px 5px 5px 5px;
+}
+
+.footer-email{
+  width: 30%;
+  margin: 0px 5px 5px 5px;
+  display: none;
+}
+
+form.footer-email input{
+  font-size: medium;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.footer-redesSociales{
+  width: 20%;
+  margin: 0px 5px 5px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer div.footer-redesSociales img{
+  width: 32px;
+  height: 32px;
+}
+
+.footer-metodosDePago{
+text-align: center;
+display: flex;
+border-top: solid 2px #000000;
+padding: 2px;
+}
+
+.copy-footer{
+  text-align: left;
+}
+
+.parrafo-footer{
+  font-size: 12px;
+  line-height:1.5;
+}
+
+.icon-metodosDePago{
+  background-color: #4A34EB;
+  border-radius: 5px;
+  color: #FBFCFC;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }

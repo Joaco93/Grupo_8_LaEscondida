@@ -7,21 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle de los productos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/css/home-styles.css">
     <link rel="stylesheet" href="/css/productDetail-styles.css">
 </head>
 
 <body>
     <header>
-        <div class="cart">
-            <a href="/productCart"><i class="fas fa-shopping-cart"></a></i>
-        </div>
-
-        <div class="logo">
-            <!--IMAGEN DEL LOGO-->
-            <a href="/"><img src="/images/laEscondida-logo.png" alt="Logo La Escondida"></a>
-        </div>
-
         <div class="user">
             <a href="/login"><i class="fas fa-user"></a></i>
             <ul>
@@ -29,32 +19,152 @@
                 <li><a href="/login">Login</a></li>
             </ul>
         </div>
-
         <form action="/" method="POST" class="search">
             <input type="search" name="buscador" placeholder="Buscar Productos...">
             <i class="fas fa-search"></i>
         </form>
+
+        <div class="cart">
+            <a href="/productCart"><i class="fas fa-shopping-cart"></a></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#cervezas">Cervezas</a></li>
+                <li><a href="#vinos">Vinos</a></li>
+                <li><a href="#licores">Licores</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <h4>Productos relacionados</h4>
-    <div class="slider">
 
-        <ul>
-            <li>
+    <section>
+        <h4 id="cervezas">Cervezas</h4>
+
+        <article>
+            <div class="cerveza-kunstmann">
                 <img src="/images/bebidas/cervezaKunstmann.png" alt="Cerveza Kunstmann" />
-            </li>
-            <li>
+                <div class="descripcion">
+                    <h5>HOME > PRODUCTO > CERVEZAS </h5>
+                    <h4>Kunstmann</h4>
+                    <p>PRECIO: $85
+                    <p>
+                    <form action="/" method="POST">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                        <button type="submit">AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+            </div>
+            <div class="cerveza-miller">
                 <img src="/images/bebidas/cervezaMiller.png" alt="Cerveza Miller" />
-            </li>
-            <li>
-                <img src="/images/bebidas/cervezaPatagonia.png" alt="Cerveza Patagonia" />
-            </li>
-            <li>
-                <img src="/images/bebidas/destiladoRedLabel.png" alt="Bebidas Destiladas varias" />
-            </li>
-        </ul>
+                <div class="descripcion">
+                    <h5>HOME > PRODUCTO > CERVEZAS </h5>
+                    <h4>Miller</h4>
+                    <p>PRECIO: $65
+                    <p>
+                    <form action="/" method="POST">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                        <button type="submit">AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+            </div>
 
-    </div>
+            <div class="cerveza-patagonia">
+                <img src="/images/bebidas/cervezaPatagonia.png" alt="Cerveza Patagonia" />
+                <div class="descripcion">
+                    <h5>HOME > PRODUCTO > CERVEZAS </h5>
+                    <h4>Patagonia</h4>
+                    <p>PRECIO: $100
+                    <p>
+                    <form action="/" method="POST">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                        <button type="submit">AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+
+        <h4 id="vinos">Vinos</h4>
+        <article>
+            <div class="vino-laMascota">
+                <img src="/images/bebidas/vino-blanco-LaMascota.png" alt="Vino blanco La Mascota" />
+                <div class="descripcion">
+                    <h5>HOME > PRODUCTO > VINOS </h5>
+                    <h4>La Mascota</h4>
+                    <p>PRECIO: $62
+                    <p>
+                    <form action="/" method="POST">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                        <button type="submit">AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="vino-santaJulia">
+                <img src="/images/bebidas/vino-blanco-SantaJulia.png" alt="Vino blanco Santa Julia" />
+                <div class="descripcion">
+                    <h5>HOME > PRODUCTO > VINOS </h5>
+                    <h4>Santa Julia</h4>
+                    <p>PRECIO: $52
+                    <p>
+                    <form action="/" method="POST">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                        <button type="submit">AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+            </div>
+            <div class="vino-perroCallejero">
+                <img src="/images/bebidas/vino-tinto-PerroCallejero.png" alt="Vino tinto Perro Callejero" />
+                <div class="descripcion">
+                    <h5>HOME > PRODUCTO > VINOS </h5>
+                    <h4>Perro Callejero</h4>
+                    <p>PRECIO: $35
+                    <p>
+                    <form action="/" method="POST">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                        <button type="submit">AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+
+        <h4 id="licores">Licores</h4>
+        <article>
+            <div class="destilado-tanqueray">
+                <img src="/images/bebidas/destiladoTanqueray.png" alt="Destilado Tanqueray" />
+                <div class="descripcion">
+                    <h5>HOME > PRODUCTO > LICORES </h5>
+                    <h4>Tanqueray</h4>
+                    <p>PRECIO: $200
+                    <p>
+                    <form action="/" method="POST">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                        <button type="submit">AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+            </div>
+            <div class="destialdo-redLabel">
+                <img src="/images/bebidas/destiladoRedLabel.png" alt="Destilado Red Label" />
+                <div class="descripcion">
+                    <h5>HOME > PRODUCTO > LICORES </h5>
+                    <h4>Red Label</h4>
+                    <p>PRECIO: $500
+                    <p>
+                    <form action="/" method="POST">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                        <button type="submit">AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </section>
 
     <footer>
         <div class="footer-shop">
