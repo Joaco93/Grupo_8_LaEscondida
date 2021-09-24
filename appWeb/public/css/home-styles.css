@@ -19,11 +19,19 @@ header{
 }
 
 div.cart{
-    display: flex;
+    display: inline-block;
     width: 20%;
-    flex-direction:row;
-    justify-content: flex-start;
+    flex-direction:column;
     transition: all 05s;
+    vertical-align: top;
+}
+
+.caption{
+    width: 100%;
+    display:block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 10px;
 }
 
 .fa-shopping-cart{
@@ -54,9 +62,10 @@ div.user{
 
 div.user ul{
     width: 100%;
-    position: relative;
-    left: -5px;
-    font-size: 12px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items: flex-end;
 }
   
 div.user ul li{
