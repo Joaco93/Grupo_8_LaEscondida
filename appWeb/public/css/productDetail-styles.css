@@ -188,6 +188,12 @@ section article div img{
   background-color: #1C1D1B;
   color: #ffffff;
   font-size: 12px;
+
+  transition: all 0.6;
+}
+
+.descripcion button:hover{
+   background-color: #BF6C67;
 }
 
 footer{
@@ -285,12 +291,21 @@ footer div.footer-redesSociales img{
 }
 
 @media (min-width: 481px){
-
-  .descripcion button{
-    width: 60%;
-    height: 50px;
+   
+  .descripcion h5{
+     text-align: center;
+  }
+  
+  .descripcion label{
+    text-align: right;
   }
 
+  .descripcion button{
+    width: 50%;
+    height: 50px;
+    margin: auto;
+  }
+  
   .footer-laEscondida{
     width: 20%;
   }
@@ -303,5 +318,15 @@ footer div.footer-redesSociales img{
 
   .parrafo-footer{
     display: block;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .descripcion{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
   }
 }
