@@ -29,7 +29,6 @@ div.cart{
 .fa-shopping-cart{
     color: #ffffff;
     font-size: 25px;
-    
 }
 
 div.cart :hover{
@@ -97,6 +96,11 @@ form.search input{
     color: #ffffff;
 }
 
+main{
+    width: 95%;
+    margin: auto;
+}
+
 .slider {
 	width: 95%;
 	margin: auto;
@@ -149,7 +153,7 @@ section ul{
    width: 30%;
 }
 
-section ul li{
+section ul li,.footer-laEscondida ul li, .footer-shop ul li{
     list-style: none;  
 }
 
@@ -181,11 +185,17 @@ section ul label{
 .product-cerveza,.product-vinos,.product-licores{
   text-align: center;
   font-family: 'Kanit', sans-serif;
+
 }
 
-p .comentario{
+.product-cerveza label{
+   font-size: 12px;
+}
+
+.comentario{
   font-size: 10px;
   font-weight: lighter;
+  display: none;
 }
 
 footer{
@@ -211,10 +221,17 @@ footer div ul li a{
 }
   
 .footer-laEscondida{
-    width: 20%;
-    margin: 0px 5px 5px 5px;
+    width: 50%;
 }
-  
+
+.footer-laEscondida h4{
+   font-size: 14px;
+}
+
+.footer-laEscondida ul li a{
+  font-size: 12px; 
+} 
+
 .footer-email{
     width: 30%;
     margin: 0px 5px 5px 5px;
@@ -223,13 +240,12 @@ footer div ul li a{
 
 form.footer-email input{
     font-size: medium;
-    width: 70%;
+    width: 75%;
     border-radius: 5px;
 }
 
 .footer-redesSociales{
-    width: 20%;
-    margin: 0px 5px 5px 5px;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -247,12 +263,24 @@ footer div.footer-redesSociales img{
   padding: 2px;
 }
 
+.footer-metodosDePago h4{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-size: 14px;
+}
+
+.footer-metodosDePago h3{
+   font-size: 14px;
+}
+
 .copy-footer{
     text-align: left;
 }
 
 .parrafo-footer{
     line-height:1.5;
+    display: none;
 }
 
 .icon-metodosDePago{
@@ -260,7 +288,7 @@ footer div.footer-redesSociales img{
     border-radius: 5px;
     color: #FBFCFC;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
@@ -271,9 +299,22 @@ footer div.footer-redesSociales img{
     }
 }
 
-@media (min-width: 481px){
+@media (min-width: 480px){
     header{
         padding: 20px;
+    }
+    
+    .product-cerveza label{
+        font-size: 15px;
+    }
+
+    p .comentario{
+        display: block;
+    }
+
+    .parrafo-footer{
+        display: block;
+        font-size: 13px;
     }
 }
 
@@ -314,12 +355,29 @@ footer div.footer-redesSociales img{
     .footer-shop{
         display: block;
     }
+    
+    
+    .footer-laEscondida{
+       width: 20%;
+       margin: 0px 5px 5px 5px;
+    }
+    
+    .footer-laEscondida h4{
+        font-size: 16px;
+    }
+
+    .footer-shop ul li a,.footer-laEscondida ul li a{
+        font-size: 14px; 
+    }
 
     .footer-email{
       display: block;
     }
-
     
+    .footer-redesSociales{
+        width: 20%;
+        margin: 0px 5px 5px 5px;
+    }
 }
 
 @media (min-width: 761px) {

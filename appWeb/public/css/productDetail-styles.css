@@ -180,13 +180,14 @@ section article div img{
 }
 
 .descripcion button{
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: auto;
-   background-color: #1C1D1B;
-   color: #ffffff;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  background-color: #1C1D1B;
+  color: #ffffff;
+  font-size: 12px;
 }
 
 footer{
@@ -206,12 +207,6 @@ footer div ul li a{
   font-size: 12px;
 }
 
-.footer-shop{
-  width: 20%;
-  margin: 0px 5px 5px 5px;
-  display: none;
-}
-
 .footer-laEscondida{
   width: 50%;
   margin: 0px 5px 5px 5px;
@@ -222,8 +217,6 @@ div.footer-laEscondida h4{
 }
 
 .footer-email{
-  width: 40%;
-  margin: 0px 5px 5px 5px;
   display: none;
 }
 
@@ -257,11 +250,14 @@ footer div.footer-redesSociales img{
 }
 
 .footer-metodosDePago h4{
-   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
 }
 
 .footer-metodosDePago h3{
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .footer-metodosDePago article{
@@ -284,14 +280,28 @@ footer div.footer-redesSociales img{
   border-radius: 5px;
   color: #FBFCFC;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
-@media (min-width: 481){
+@media (min-width: 481px){
 
   .descripcion button{
     width: 60%;
     height: 50px;
+  }
+
+  .footer-laEscondida{
+    width: 20%;
+  }
+
+  .footer-email{
+    width: 40%;
+    margin: 0px 5px 5px 5px;
+    display: block;
+  }
+
+  .parrafo-footer{
+    display: block;
   }
 }
