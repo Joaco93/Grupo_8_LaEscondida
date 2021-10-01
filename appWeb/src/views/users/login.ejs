@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <!--HEAD-->
+  <%- include('./partials/head') %>
+  <body>
+  
+    <!-- Header -->
+    <%- include('./partials/header')%>
+
+    <!-- Page content -->
+    <body>
+        <section class="form-login">
+            <h4>Iniciar sesión </h4>
+            <main>
+                <section>
+                    <form action="/" method="POST" class="formlogin">
+                        <label>Email</label>
+                        <input type="text" name="email" required placeholder="Tu dirección de correo">
+                        <label>Contraseña</label>
+                        <input type="password" name="password" required placeholder="Contraseña">
+                        <p><a href=#>¿Olvidaste tu contraseña?</a></p>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </main>
+        </section>
+        </body>
+    <!-- Footer -->
+ <%- include('./partials/footer') %>
+</div>
+</body>
+</html>       
