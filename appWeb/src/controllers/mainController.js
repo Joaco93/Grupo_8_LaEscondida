@@ -2,17 +2,19 @@ const path = require ("path")
  
 const controlador = {
    home: (req,res)=> {
-       res.render(path.resolve(__dirname,"../views", "home.ejs"))
+       res.render(path.resolve(__dirname,"../views/home.ejs"))
    },
    login: (req,res)=>{
-       res.render(path.resolve(__dirname,"../views", "users", "login.ejs"))
+       res.render(path.resolve(__dirname,"../views/users/login.ejs"))
    },
    register: (req,res)=>{
-       res.render(path.resolve(__dirname,"../views", "users", "register.ejs"))
+       res.render(path.resolve(__dirname,"../views/users/register.ejs"))
    },
    productCart: (req,res)=>{
-       res.render(path.resolve(__dirname,"../views", "product", "productCart.ejs"))
-
+       res.render(path.resolve(__dirname,"../views/products/productCart.ejs"));
    },
+   productDetail: (req,res) =>{
+       res.render(path.resolve(__dirname,"../views/products/productDetail.ejs"));
+   }
 };
-module.exports = controlador ;
+module.exports = controlador;

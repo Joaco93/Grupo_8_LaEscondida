@@ -34,6 +34,10 @@ div.cart{
   font-size: 25px;
 }
 
+.logo{
+   display: none;
+}
+
 div.user{
   width: 20%;
 } 

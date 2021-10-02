@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en"></html>
   <!--HEAD-->
-  <%- include('../partials/head') %>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de los productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/productDetail-styles.css">
+</head>
+ 
   <body>
   
     <!-- Header -->
-    <%- include('../partials/header')%>
+    <header>
+        <div class="user">
+            <a href="/login"><i class="fas fa-user"></a></i>
+            <ul>
+                <li><a href="/register">Registrarse</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+        <form action="/" method="POST" class="search">
+            <input type="search" name="buscador" placeholder="Buscar Productos...">
+            <i class="fas fa-search"></i>
+        </form>
+
+        <div class="cart">
+            <a href="/productCart"><i class="fas fa-shopping-cart"></a></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#cervezas">Cervezas</a></li>
+                <li><a href="#vinos">Vinos</a></li>
+                <li><a href="#licores">Licores</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Page content -->
     <section>
