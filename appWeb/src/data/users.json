@@ -1,0 +1,13 @@
+{
+    "users":[
+        {
+            "id":"",
+            "first-name":"",
+            "last-name":"",
+            "email":"",
+            "password":"",
+            "avatar":"",
+            "fecha-nacimiento":""
+        }
+    ]
+}
