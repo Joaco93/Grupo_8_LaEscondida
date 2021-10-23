@@ -3,34 +3,34 @@
         {
             "id":"1",
             "name":"cerveza-kunstmann",
-            "description":"",
+            "description":"Con intensidad alta de aromas a naranjas, duraznos, además de tostado y caramelo, su paladar es de cuerpo medio, su espuma llena la boca con mucha carga frutal y leve amargor.",
             "image":"cervezaKunstmann.png",
             "category":"Cerveza",
-            "size":"",
+            "size":"330",
             "price":"85"
         },
         {
             "id":"2",
             "name":"cerveza-miller",
-            "description":"",
+            "description":"Es una cerveza americana tipo lager que ofrece un sabor fresco a través de su proceso de preparación: cuatro veces filtrado en frío. ",
             "image":"cervezaMiller.png",
             "category":"Cerveza",
-            "size":"",
+            "size":"330",
             "price":"65"
         },
         {
             "id":"3",
             "name":"cerveza-patagonia",
-            "description":"",
+            "description":"cerveza de un suave sabor a caramelo, elaborada con una combinación de 4 maltas, que le dan su característico color ámbar y sabor maltoso, dejando un sutil dulzor en boca.",
             "image":"cervezaPatagonia.png",
             "category":"Cerveza",
-            "size":"",
+            "size":"710",
             "price":"100"
         },
         {
             "id":"4",
             "name":"vino-laMascota",
-            "description":"",
+            "description":"Equilibrado Chardonnay de color amarillo claro con matices verdes. Su aroma a pera y ananá",
             "image":"vino-blanco-LaMascota.png",
             "category":"Vino",
             "size":"",
@@ -39,7 +39,7 @@
         {
             "id":"5",
             "name":"vino-santaJulia",
-            "description":"",
+            "description":"Es un vino suave y delicado, de color amarillo verdoso y aromas que recuerdan a durazno blanco, damasco, hierbas frescas y algunas notas cítricas como limón y pomelo.",
             "image":"vino-blanco-SantaJulia.png",
             "category":"Vino",
             "size":"",
