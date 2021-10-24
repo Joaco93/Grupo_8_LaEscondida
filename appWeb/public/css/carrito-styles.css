@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;  
+    text-decoration: none; 
+    list-style: none;
+    -webkit-text-size-adjust: none;
+}
+
+
+main{
+    margin-top: -30px;
+    }
+.titulo-carrito{
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top:30px;
+}
+.contenedor-seccion1{
+    padding-top: 30px;
+}
+.figure__lamascota__carrito{
+    max-width: 30%;
+}
+.img__lamascota__carrito, .img__cervezaKunstmann__carrito{
+    width: 20%;
+}
+.contenedor__carritos_01y02{
+    border-top: solid 2px white(90, 14, 22);
+    display: flex table-column;
+    justify-content: center;
+    padding-top: 30px;
+}
+.carrito_01, .carrito_02{
+    display: flex;
+}
+.vino, .cerveza, .size, .price{
+    margin-top: 15%;
+    padding-right: 50px;
+    font-weight: 700;
+}
+
+.cantidad{
+    margin: 13% 50px 8% 0;
+    background-color: #285A71;
+    border: solid 2px ;
+    border-radius: 9px;
+    color: white;
+    padding: 1% 2%;
+    text-align: center;
+}
+/* ===================================== COMIENZO MEDIA QUERIES =============================================== */
+    /* ======================================= 0 ===================================== */
+        @media screen and (min-width:768px){
+    /* =============================================================================== */  
+        .carrito_02{
+            margin-top: 3%;
+        }
+}
+    /* ======================================= 1 ===================================== */
+        @media screen and (min-width:1200px){
+    /* =============================================================================== */
+        .carrito_02{
+            margin-top: 4.5%;
+        }
+        .contenedor-seccion1{
+            margin: 20 29%;
+        }
+}

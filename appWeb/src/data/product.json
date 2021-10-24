@@ -33,7 +33,7 @@
             "description":"Equilibrado Chardonnay de color amarillo claro con matices verdes. Su aroma a pera y ananá",
             "image":"vino-blanco-LaMascota.png",
             "category":"Vino",
-            "size":"375",
+            "size":"750 ml",
             "price":"62"
         },
         {
@@ -42,7 +42,7 @@
             "description":"Es un vino suave y delicado, de color amarillo verdoso y aromas que recuerdan a durazno blanco, damasco, hierbas frescas y algunas notas cítricas como limón y pomelo.",
             "image":"vino-blanco-SantaJulia.png",
             "category":"Vino",
-            "size":"750",
+            "size":"750 ml",
             "price":"52"
         },
         {
@@ -51,7 +51,7 @@
             "description":"Perro Callejero es un Blend de uvas Malbec cosechadas en diferentes puntos entre valle de uco y Lujan de Cuyo por Bodega Mosquita Muerta. Perro Callejero se cosecha manualmente en cajas de 15 Kg",
             "image":"vino-tinto-PerroCallejero.png",
             "category":"Vino",
-            "size":"375",
+            "size":"750 ml",
             "price":"35"
         },
         {
@@ -60,7 +60,7 @@
             "description":"La ginebra Tanqueray fue destilada inicialmente en 1830 por Charles Tanqueray en el distrito londinense de Bloomsbury.",
             "image":"destiladoTanqueray.png",
             "category":"Licores",
-            "size":"700",
+            "size":"700 ml",
             "price":"200"
         },
         {
@@ -69,7 +69,7 @@
             "description":"Johnnie Walker Red Label se destaca por su carácter e intensidad, por sus notas especiadas que estallan con sabores vibrantes y ahumados",
             "image":"destiladoRedLabel.png",
             "category":"Licores",
-            "size":"750",
+            "size":"750 ml",
             "price":"500"
         }
     ]
