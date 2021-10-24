@@ -199,6 +199,32 @@ section article div img{
 .descripcion button:hover{
    background-color: #BF6C67;
 }
+/* style product*/
+.productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1.title{
+  text-align: center;
+}
+
+.name-products, .category-products, .price-products{
+  width: 125px;
+  height: 20%;
+}
+
+.img-products{
+   width: 25%;
+   box-shadow: none;
+}
+
+.img-products img{
+   width: 80px;
+   height: 100px;
+   margin: auto;
+}
 
 footer{
   width: 90%;
@@ -332,5 +358,11 @@ footer div.footer-redesSociales img{
     padding: 10px;
     border-radius: 10px;
     margin: 5px 0 5px 0;
+  }
+  .productos{
+    height: 300px;
+  }
+  .name-products{
+    width: 125px;
   }
 }

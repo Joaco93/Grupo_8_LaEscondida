@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const multer = require('multer');
 const {body, validationResult} = require('express-validator');
 const methodOverride = require('method-override');
 const rutasMain = require('./routes/main');
