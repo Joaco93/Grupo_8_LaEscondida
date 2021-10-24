@@ -6,7 +6,7 @@
             "description":"Con intensidad alta de aromas a naranjas, duraznos, además de tostado y caramelo, su paladar es de cuerpo medio, su espuma llena la boca con mucha carga frutal y leve amargor.",
             "image":"cervezaKunstmann.png",
             "category":"Cerveza",
-            "size":"330",
+            "size":"330 ml",
             "price":"85"
         },
         {
@@ -15,7 +15,7 @@
             "description":"Es una cerveza americana tipo lager que ofrece un sabor fresco a través de su proceso de preparación: cuatro veces filtrado en frío. ",
             "image":"cervezaMiller.png",
             "category":"Cerveza",
-            "size":"330",
+            "size":"330 ml",
             "price":"65"
         },
         {
@@ -24,7 +24,7 @@
             "description":"cerveza de un suave sabor a caramelo, elaborada con una combinación de 4 maltas, que le dan su característico color ámbar y sabor maltoso, dejando un sutil dulzor en boca.",
             "image":"cervezaPatagonia.png",
             "category":"Cerveza",
-            "size":"710",
+            "size":"710 ml",
             "price":"100"
         },
         {
