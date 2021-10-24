@@ -6,7 +6,7 @@
             "description":"Con intensidad alta de aromas a naranjas, duraznos, además de tostado y caramelo, su paladar es de cuerpo medio, su espuma llena la boca con mucha carga frutal y leve amargor.",
             "image":"cervezaKunstmann.png",
             "category":"Cerveza",
-            "size":"330",
+            "size":"330 ml",
             "price":"85"
         },
         {
@@ -15,7 +15,7 @@
             "description":"Es una cerveza americana tipo lager que ofrece un sabor fresco a través de su proceso de preparación: cuatro veces filtrado en frío. ",
             "image":"cervezaMiller.png",
             "category":"Cerveza",
-            "size":"330",
+            "size":"330 ml",
             "price":"65"
         },
         {
@@ -24,16 +24,16 @@
             "description":"cerveza de un suave sabor a caramelo, elaborada con una combinación de 4 maltas, que le dan su característico color ámbar y sabor maltoso, dejando un sutil dulzor en boca.",
             "image":"cervezaPatagonia.png",
             "category":"Cerveza",
-            "size":"710",
+            "size":"710 ml",
             "price":"100"
         },
         {
             "id":"4",
             "name":"vino-laMascota",
-            "description":"Equilibrado Chardonnay de color amarillo claro con matices verdes. Su aroma a pera y ananá",
-            "image":"vino-blanco-LaMascota.png",
+            "description":"Posee un color púrpura intenso con tonalidades rubí. Se aprecian aromas de frutas negras, mermelada y vainilla",
+            "image":"vino-tinto-LaMascota.png",
             "category":"Vino",
-            "size":"",
+            "size":"750 ml",
             "price":"62"
         },
         {
@@ -42,16 +42,16 @@
             "description":"Es un vino suave y delicado, de color amarillo verdoso y aromas que recuerdan a durazno blanco, damasco, hierbas frescas y algunas notas cítricas como limón y pomelo.",
             "image":"vino-blanco-SantaJulia.png",
             "category":"Vino",
-            "size":"",
+            "size":"750 ml",
             "price":"52"
         },
         {
             "id":"6",
             "name":"vino-perroCallejero",
-            "description":"",
-            "image":"vino-tinto-PerroCallejero.png",
+            "description":"Vino fresco con aromas a cítricos y herbáceos; pomelo rosado, cascara de durazno y ruda",
+            "image":"vino-blanco-PerroCallejero.png",
             "category":"Vino",
-            "size":"",
+            "size":"750 ml",
             "price":"35"
         },
         {
@@ -66,10 +66,10 @@
         {
             "id":"8",
             "name":"destilado-redLabel",
-            "description":"",
+            "description":"Es una ginebra importada Premium de excelente calidad. Tanqueray selecciona los mejores botánicos del mundo",
             "image":"destiladoRedLabel.png",
             "category":"Licores",
-            "size":"",
+            "size":"700 ml",
             "price":"500"
         }
     ]
