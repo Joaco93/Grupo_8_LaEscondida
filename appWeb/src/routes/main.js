@@ -13,5 +13,7 @@ router.get('/products',rutasProduct);
 router.get('/products/create',rutasProduct);
 router.get('/products/:id',rutasProduct);
 
+router.get('/contact', mainController.contact)
+
 router.post('/products/create',rutasProduct);
 module.exports = router;

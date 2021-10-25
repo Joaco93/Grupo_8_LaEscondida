@@ -25,6 +25,8 @@ app.use('/register',rutasMain);
 
 app.use('/login',rutasMain);
 
+app.use ('/contact', rutasMain);
+
 app.use((req, res,next) => {
 	res.status(404).render('not-found.');
 });
