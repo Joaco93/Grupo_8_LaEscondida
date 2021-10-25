@@ -204,10 +204,32 @@ section article div img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  box-shadow: none;
 }
 
 h1.title{
   text-align: center;
+  margin: 5px;
+}
+
+.title-product{
+   text-align: center;
+   margin: 8px;
+}
+.product{
+  list-style-type: none;
+  text-align: center;
+}
+
+.product-id{
+  font-size: 18px;
+  font-family: 'Roboto';
+  margin: 3px;
+}
+
+.product-id a{
+  text-decoration: none;
+  color: rgb(39, 37, 37);
 }
 
 .name-products, .category-products, .price-products{
@@ -358,9 +380,6 @@ footer div.footer-redesSociales img{
     padding: 10px;
     border-radius: 10px;
     margin: 5px 0 5px 0;
-  }
-  .productos{
-    height: 300px;
   }
   .name-products{
     width: 125px;

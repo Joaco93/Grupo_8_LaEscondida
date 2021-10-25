@@ -44,26 +44,26 @@
     <main>
         <!-- Page content -->
         <section>
-            <h1 class="title">Lista de productos</h1>
-            <% let i=0%>
-                <% while(i < products.length){%>
-                    <% let key=products[i].category%>
-                        <h3 class="title-product">
-                            <%= products[i].category%>
-                        </h3>
-                        <ul class="product">
-                            <% while(i < products.length && key==products[i].category){%>
-
-                                <li class="product-id">
-                                        <a href="/products/<%= products[i].id%>">
-                                            <%= products[i].name%>
-                                        </a>
-                                </li>
-                                <% i++%>
-                                    <% } %>
-                        </ul>
-                        <% } %>
-
+            <h1 class="title">Producto seleccionado</h1>
+                <article class="productos">
+                <h1 class="name-product">
+                    <%= productResult.name%>
+                </h1>
+                <div class="img-products">
+                <img src="/images/bebidas/<%= productResult.image%>" alt="<%= productResult.name%>">
+                </div>
+                <h4 class="category-description">
+                    <%= productResult.description%>
+                </h4>
+                <h4 class="category-product">
+                    <%= productResult.category%>
+                </h4>
+                <h4 class="category-size">
+                    <%= productResult.size%>
+                </h4>
+                <h4 class="price-product">$<%= productResult.price%>
+                </h4>
+                </article>
         </section>
     </main>
     <!-- Footer -->

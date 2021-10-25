@@ -11,6 +11,7 @@ router.get('/productDetail',mainController.productDetail);
 
 router.get('/products',rutasProduct);
 router.get('/products/create',rutasProduct);
+router.get('/products/:id',rutasProduct);
 
 router.post('/products/create',rutasProduct);
 module.exports = router;
