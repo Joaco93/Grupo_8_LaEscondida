@@ -8,12 +8,17 @@ router.get('/login', mainController.login);
 router.get('/register', mainController.register);
 router.get('/productCart', mainController.productCart);
 router.get('/productDetail',mainController.productDetail);
+router.get('/contact', mainController.contact);
 
-router.get('/products',rutasProduct);
+router.use('/products',rutasProduct);
 router.get('/products/create',rutasProduct);
 router.get('/products/:id',rutasProduct);
-
-router.get('/contact', mainController.contact)
+router.get('/products/:id/edit',rutasProduct);
 
 router.post('/products/create',rutasProduct);
+
+router.put('/products/:id',rutasProduct);
+
+router.delete('/products/:id',rutasProduct);
+
 module.exports = router;

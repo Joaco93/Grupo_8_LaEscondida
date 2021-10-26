@@ -34,8 +34,35 @@ const controlador = {
       res.render(path.resolve(__dirname, "../views/products/productId.ejs"), {productResult});
    },
    edit: (req,res) => {
+     let products = fileJson.getProducts();
+      let idProduct = req.params.id;
+     
+      let productToEdit =  products[idProduct];
+      res.render(path.resolve(__dirname, "../views/products/productIdEdit.ejs"), {productToEdit});
+   },
+   actualizar: (req,res) =>{
       let products = fileJson.getProducts();
-      res.render(path.resolve(__dirname, "../views/products/productIdEdit.ejs"), {products});
+      let productEdit = req.body;
+      productEdit.id = req.params.id;
+
+         for(let i = 0; i < products.length;i++){
+           if(productEdit.id == products[i].id){
+               products[i].name = productEdit.name;
+               products[i].description = productEdit.descripcion;
+               products[i].category = productEdit.category;
+               products[i].size = productEdit.size;
+               products[i].price = productEdit.price;
+           }
+         }
+         fileJson.setProducts(products);
+      res.send("Se modifico el producto!!");
+   },
+   delete: (req,res) =>{
+      let products = fileJson.getProducts();
+      let idProduct = req.params.id;
+      
+      // falta buscar el producto y borrarlo
+      res.send("Producto eliminado!!");
    }
 };
 module.exports = controlador;

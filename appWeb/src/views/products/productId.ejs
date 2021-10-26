@@ -65,6 +65,10 @@
                 </h4>
                 </article>
         </section>
+        <a href="/products/edit/<%= productResult.id%>"><input type="submit" name="edit" value="Editar"></a>
+        <form action="/products/<%= productResult.id%>?_method=DELETE" method="POST" enctype="multipart/form-data">
+        <input type="submit" name="eliminar" value="Eliminar">
+        </form>
     </main>
     <!-- Footer -->
     <div>

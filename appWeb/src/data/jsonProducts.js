@@ -15,7 +15,7 @@ module.exports = {
     return products
     },
     setProducts: (data) => {
-        fs.appendFileSync(
+        fs.writeFileSync(
             products_db,
             JSON.stringify(data, null, 2)
         );

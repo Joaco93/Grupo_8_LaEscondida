@@ -1,76 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
-</html>
-<!--HEAD-->
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - La Escondida</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/css/productDetail-styles.css">
-</head>
-
-<body>
-
+<html lang="en"></html>
+  <!--HEAD-->
+  <%- include('../partials/head') %>
+  <body>
+  
     <!-- Header -->
-    <header>
-        <div class="user">
-            <a href="/login"><i class="fas fa-user"></a></i>
-            <ul>
-                <li><a href="/register">Registrarse</a></li>
-                <li><a href="/login">Login</a></li>
-            </ul>
-        </div>
-        <form action="/" method="POST" class="search">
-            <input type="search" name="buscador" placeholder="Buscar Productos...">
-            <i class="fas fa-search"></i>
-        </form>
+    <%- include('../partials/header')%>
 
-        <div class="cart">
-            <a href="/productCart"><i class="fas fa-shopping-cart"></a></i>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#cervezas">Cervezas</a></li>
-                <li><a href="#vinos">Vinos</a></li>
-                <li><a href="#licores">Licores</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Page content -->
-        <section>
-            <h1 class="title">Producto seleccionado</h1>
-                <article class="productos">
-                <h1 class="name-product">
-                    <%= productResult.name%>
-                </h1>
-                <div class="img-products">
-                <img src="/images/bebidas/<%= productResult.image%>" alt="<%= productResult.name%>">
-                </div>
-                <h4 class="category-description">
-                    <%= productResult.description%>
-                </h4>
-                <h4 class="category-product">
-                    <%= productResult.category%>
-                </h4>
-                <h4 class="category-size">
-                    <%= productResult.size%>
-                </h4>
-                <h4 class="price-product">$<%= productResult.price%>
-                </h4>
-                </article>
-        </section>
-    </main>
+    <!-- Page content -->
+    <section class="form-register">
+        <h4>Completa tus datos</h4>
+        <main>
+            <section>
+                <form action="/products/<%= productToEdit.id%>?_method=PUT" method="POST" class="formregister" enctype="multipart/form-data">
+                    <label for="name">Nombre del Producto</label>
+                    <input type="text" name="name" required value="<%= productToEdit.name%>" id="name">
+
+                    <label for="description">Descripcion</label>
+                    <textarea name="descripcion" id="description"><%= productToEdit.description%></textarea>
+                    
+                    <label for="product-image">Imagen de la bebida</label>
+                    <img src="/images/bebidas/<%= productToEdit.image%>" alt="<%= productToEdit.name%>">
+                    <input type="file" name="product-image" id="product-image">
+                    
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category" required value="<%= productToEdit.category%>" id="category">
+                    
+                    <label for="size">Tamaño</label>
+                    <input type="text" name="size" required id="size" value="<%= productToEdit.size%>">
+                    
+                    <label for="price">Precio</label>
+                    <input type="number" name="price" required id="price" value="<%= productToEdit.price %>">
+
+                    <input type="submit" value="Editar">
+                </form>
+            </section>
+        </main>
+    </section>
     <!-- Footer -->
-    <div>
-        <%- include('../partials/footer') %>
-    </div>
-
+    <%- include('../partials/footer') %>
+</div>
 </body>
-
 </html>

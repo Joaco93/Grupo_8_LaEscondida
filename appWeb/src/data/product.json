@@ -1,75 +1,74 @@
-
-    [
-        {
-            "id":1,
-            "name":"Kunstmann",
-            "description":"Con intensidad alta de aromas a naranjas, duraznos, además de tostado y caramelo, su paladar es de cuerpo medio, su espuma llena la boca con mucha carga frutal y leve amargor.",
-            "image":"cervezaKunstmann.png",
-            "category":"Cerveza",
-            "size":"330 ml",
-            "price":"85"
-        },
-        {
-            "id":2,
-            "name":"Miller",
-            "description":"Es una cerveza americana tipo lager que ofrece un sabor fresco a través de su proceso de preparación: cuatro veces filtrado en frío. ",
-            "image":"cervezaMiller.png",
-            "category":"Cerveza",
-            "size":"330 ml",
-            "price":"65"
-        },
-        {
-            "id":3,
-            "name":"Patagonia",
-            "description":"cerveza de un suave sabor a caramelo, elaborada con una combinación de 4 maltas, que le dan su característico color ámbar y sabor maltoso, dejando un sutil dulzor en boca.",
-            "image":"cervezaPatagonia.png",
-            "category":"Cerveza",
-            "size":"710 ml",
-            "price":"100"
-        },
-        {
-            "id":4,
-            "name":"La Mascota",
-            "description":"Equilibrado Chardonnay de color amarillo claro con matices verdes. Su aroma a pera y ananá",
-            "image":"vino-blanco-LaMascota.png",
-            "category":"Vino",
-            "size":"750 ml",
-            "price":"62"
-        },
-        {
-            "id":5,
-            "name":"Santa Julia",
-            "description":"Es un vino suave y delicado, de color amarillo verdoso y aromas que recuerdan a durazno blanco, damasco, hierbas frescas y algunas notas cítricas como limón y pomelo.",
-            "image":"vino-blanco-SantaJulia.png",
-            "category":"Vino",
-            "size":"750 ml",
-            "price":"52"
-        },
-        {
-            "id":6,
-            "name":"Perro Callejero",
-            "description":"Perro Callejero es un Blend de uvas Malbec cosechadas en diferentes puntos entre valle de uco y Lujan de Cuyo por Bodega Mosquita Muerta. Perro Callejero se cosecha manualmente en cajas de 15 Kg",
-            "image":"vino-tinto-PerroCallejero.png",
-            "category":"Vino",
-            "size":"750 ml",
-            "price":"35"
-        },
-        {
-            "id":7,
-            "name":"Tanqueray",
-            "description":"La ginebra Tanqueray fue destilada inicialmente en 1830 por Charles Tanqueray en el distrito londinense de Bloomsbury.",
-            "image":"destiladoTanqueray.png",
-            "category":"Licores",
-            "size":"700 ml",
-            "price":"200"
-        },
-        {
-            "id":8,
-            "name":"Red Label",
-            "description":"Johnnie Walker Red Label se destaca por su carácter e intensidad, por sus notas especiadas que estallan con sabores vibrantes y ahumados",
-            "image":"destiladoRedLabel.png",
-            "category":"Licores",
-            "size":"750 ml",
-            "price":"500"
-        }
-    ]
+[
+  {
+    "id": 1,
+    "name": "Kunstmann",
+    "description": "Con intensidad alta de aromas a naranjas, duraznos, además de tostado y caramelo, su paladar es de cuerpo medio, su espuma llena la boca con mucha carga frutal y leve amargor.",
+    "image": "cervezaKunstmann.png",
+    "category": "Cerveza",
+    "size": "330 ml",
+    "price": "85"
+  },
+  {
+    "id": 2,
+    "name": "Miller",
+    "description": "Es una cerveza americana tipo lager que ofrece un sabor fresco a través de su proceso de preparación: cuatro veces filtrado en frío. ",
+    "image": "cervezaMiller.png",
+    "category": "Cerveza",
+    "size": "150 ml",
+    "price": "65"
+  },
+  {
+    "id": 3,
+    "name": "Patagonia",
+    "description": "cerveza de un suave sabor a caramelo, elaborada con una combinación de 4 maltas, que le dan su característico color ámbar y sabor maltoso, dejando un sutil dulzor en boca.",
+    "image": "cervezaPatagonia.png",
+    "category": "Cerveza",
+    "size": "710 ml",
+    "price": "100"
+  },
+  {
+    "id": 4,
+    "name": "La Mascota",
+    "description": "Equilibrado Chardonnay de color amarillo claro con matices verdes. Su aroma a pera y ananá",
+    "image": "vino-tinto-LaMascota.png",
+    "category": "Vino",
+    "size": "750 ml",
+    "price": "62"
+  },
+  {
+    "id": 5,
+    "name": "Santa Julia",
+    "description": "Es un vino suave y delicado, de color amarillo verdoso y aromas que recuerdan a durazno blanco, damasco, hierbas frescas y algunas notas cítricas como limón y pomelo.",
+    "image": "vino-blanco-SantaJulia.png",
+    "category": "Vino",
+    "size": "750 ml",
+    "price": "52"
+  },
+  {
+    "id": 6,
+    "name": "Perro Callejero",
+    "description": "Perro Callejero es un Blend de uvas Malbec cosechadas en diferentes puntos entre valle de uco y Lujan de Cuyo por Bodega Mosquita Muerta. Perro Callejero se cosecha manualmente en cajas de 15 Kg",
+    "image": "vino-blanco-PerroCallejero.png",
+    "category": "Vino",
+    "size": "750 ml",
+    "price": "35"
+  },
+  {
+    "id": 7,
+    "name": "Tanqueray",
+    "description": "La ginebra Tanqueray fue destilada inicialmente en 1830 por Charles Tanqueray en el distrito londinense de Bloomsbury.",
+    "image": "destiladoTanqueray.png",
+    "category": "Licores",
+    "size": "700 ml",
+    "price": "200"
+  },
+  {
+    "id": 8,
+    "name": "Red Label",
+    "description": "Johnnie Walker Red Label se destaca por su carácter e intensidad, por sus notas especiadas que estallan con sabores vibrantes y ahumados",
+    "image": "destiladoRedLabel.png",
+    "category": "Licores",
+    "size": "750 ml",
+    "price": "500"
+  }
+]
