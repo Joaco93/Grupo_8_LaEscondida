@@ -32,7 +32,7 @@
     "description": "Equilibrado Chardonnay de color amarillo claro con matices verdes. Su aroma a pera y ananá",
     "image": "vino-tinto-LaMascota.png",
     "category": "Vino",
-    "size": "750 ml",
+    "size": "60 ml",
     "price": "62"
   },
   {
@@ -70,5 +70,14 @@
     "category": "Licores",
     "size": "750 ml",
     "price": "500"
+  },
+  {
+    "name": "Quilmes",
+    "descripcion": "asdasfagqe",
+    "category": "Cerveza",
+    "size": "150 ml",
+    "price": "35",
+    "image": "product-1635292033850.jpg",
+    "id": 9
   }
 ]

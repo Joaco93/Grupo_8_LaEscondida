@@ -10,7 +10,7 @@ router.get('/productCart', mainController.productCart);
 router.get('/productDetail',mainController.productDetail);
 router.get('/contact', mainController.contact);
 
-router.use('/products',rutasProduct);
+router.get('/products',rutasProduct);
 router.get('/products/create',rutasProduct);
 router.get('/products/:id',rutasProduct);
 router.get('/products/:id/edit',rutasProduct);

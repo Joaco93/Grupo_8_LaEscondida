@@ -5,7 +5,7 @@ const fileJson = require('../data/jsonProducts');
 const controlador = {
    lista: (req, res) => {
       let products = fileJson.getProducts();
-      // falta crear la funcion de ordenar el array products, para cuando se creen nuevos productos
+      // falta crear la funcion de ordenar el array products por category, para cuando se creen nuevos productos
       res.render(path.resolve(__dirname, "../views/products/products.ejs"), { 'products': products });
    },
    create: (req, res) => {
@@ -13,12 +13,14 @@ const controlador = {
    },
    createProduct: (req, res) => {
       let newProduct = req.body;
+      
       newProduct.image = req.file.filename;
-
+      console.log(newProduct);
       let products = fileJson.getProducts();
 
       let lastId = products[products.length - 1].id;
-      newProduct.id = lastId++;
+      lastId++;
+      newProduct.id = lastId;
 
       products.push(newProduct);
 
@@ -34,7 +36,7 @@ const controlador = {
       res.render(path.resolve(__dirname, "../views/products/productId.ejs"), {productResult});
    },
    edit: (req,res) => {
-     let products = fileJson.getProducts();
+      let products = fileJson.getProducts();
       let idProduct = req.params.id;
      
       let productToEdit =  products[idProduct];
@@ -61,7 +63,8 @@ const controlador = {
       let products = fileJson.getProducts();
       let idProduct = req.params.id;
       
-      // falta buscar el producto y borrarlo
+      products = products.filter(producto => producto.id != idProduct);
+      fileJson.setProducts(products);
       res.send("Producto eliminado!!");
    }
 };
