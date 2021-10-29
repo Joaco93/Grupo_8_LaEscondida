@@ -70,14 +70,5 @@
     "category": "Licores",
     "size": "750 ml",
     "price": "500"
-  },
-  {
-    "name": "Quilmes",
-    "descripcion": "asdasfagqe",
-    "category": "Cerveza",
-    "size": "150 ml",
-    "price": "35",
-    "image": "product-1635292033850.jpg",
-    "id": 9
   }
 ]

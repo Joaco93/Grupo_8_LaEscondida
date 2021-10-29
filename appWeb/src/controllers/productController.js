@@ -1,21 +1,21 @@
 const path = require("path");
-const fs = require('fs');
 const fileJson = require('../data/jsonProducts');
+const productAux = require('../../public/js/libs/functions/ordenarProducts');
 
 const controlador = {
    lista: (req, res) => {
       let products = fileJson.getProducts();
-      // falta crear la funcion de ordenar el array products por category, para cuando se creen nuevos productos
-      res.render(path.resolve(__dirname, "../views/products/products.ejs"), { 'products': products });
+      productAux.ordenarProducts(products);
+      console.log(products);
+      res.render(path.resolve(__dirname, "../views/products/products.ejs"), { 'products': products});
    },
    create: (req, res) => {
       res.render(path.resolve(__dirname, "../views/products/registerProduct.ejs"));
    },
    createProduct: (req, res) => {
-      let newProduct = req.body;
-      
+      let newProduct = req.body;      
       newProduct.image = req.file.filename;
-      console.log(newProduct);
+
       let products = fileJson.getProducts();
 
       let lastId = products[products.length - 1].id;
@@ -23,10 +23,11 @@ const controlador = {
       newProduct.id = lastId;
 
       products.push(newProduct);
-
+      //productAux.ordenarProducts(products);
       fileJson.setProducts(products);
-      res.send("Producto agregado!!");
-      res.redirect(path.resolve(__dirname, "../views/products/registerProduct.ejs"));
+      
+      //res.send("Producto agregado!!");
+      res.redirect("/products");
    },
    productDetails: (req, res) => {
       let products = fileJson.getProducts();
@@ -39,7 +40,7 @@ const controlador = {
       let products = fileJson.getProducts();
       let idProduct = req.params.id;
      
-      let productToEdit =  products[idProduct];
+      let productToEdit =  products[idProduct-1];
       res.render(path.resolve(__dirname, "../views/products/productIdEdit.ejs"), {productToEdit});
    },
    actualizar: (req,res) =>{
@@ -50,14 +51,15 @@ const controlador = {
          for(let i = 0; i < products.length;i++){
            if(productEdit.id == products[i].id){
                products[i].name = productEdit.name;
-               products[i].description = productEdit.descripcion;
+               products[i].description = productEdit.description;
                products[i].category = productEdit.category;
                products[i].size = productEdit.size;
                products[i].price = productEdit.price;
            }
          }
          fileJson.setProducts(products);
-      res.send("Se modifico el producto!!");
+      //res.send("Se modifico el producto!!");
+      res.redirect("/products");
    },
    delete: (req,res) =>{
       let products = fileJson.getProducts();
@@ -65,7 +67,8 @@ const controlador = {
       
       products = products.filter(producto => producto.id != idProduct);
       fileJson.setProducts(products);
-      res.send("Producto eliminado!!");
+      //res.send("Producto eliminado!!");
+      res.redirect("/products");
    }
 };
 module.exports = controlador;

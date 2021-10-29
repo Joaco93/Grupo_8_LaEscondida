@@ -6,7 +6,7 @@ const users_db = path.join('data','users.json');
 module.exports = {
     getUsers: ()=> JSON.parse(fs.readFileSync(users_db, "utf-8")),
     setUsers: (data) => {
-        fs.writeFileSync(
+        fs.appendFileSync(
             users_db,
             JSON.stringify(data, null, 2), 
             "utf-8"
