@@ -5,7 +5,7 @@ const {body, validationResult} = require('express-validator');
 const methodOverride = require('method-override');
 const rutasMain = require('./routes/main');
 
-const logMiddleware = require('./middlewares/logMiddleware')
+var logMiddleware = require('./middlewares/logMiddleware');
 
 const app = express();
 

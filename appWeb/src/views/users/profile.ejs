@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <!--HEAD-->
+  <%- include('../partials/head.ejs') %>
+  <body>
+  
+    <!-- Header -->
+    <%- include('../partials/header')%>
+
+    <!-- Page content -->
+    <div class="card">
+        <main>
+            <h1>Perfil </h1>
+        
+            <section class="basic">                  
+                    <img src= "/uploads/users/<%= user.image%>" class="imagen-usuario" id="" alt=""> 
+                    <p>Nombre:</p>
+                    <span><%= user.name %> <%= user.lastName %></span>
+            </section>
+        
+            <section class="data">
+                <div>
+                    <p>Mail:</p>
+                    <span><%= user.email %></span>
+                </div>
+            </section>
+        
+            <div class="close">
+                <button id="boton-perfil"><a href="/logout"> Log out</a></button>
+        </section>
+    </section> 
+</main>
+
+<!-- Footer -->
+<%- include('../partials/footer') %>
+</div>
+</body>
+</html>       

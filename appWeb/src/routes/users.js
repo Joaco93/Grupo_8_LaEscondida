@@ -3,6 +3,11 @@ const router = express.Router ();
 const path = require ("path")
 const userController = require ("../controllers/userController");
 
+const logDBMiddleware = require("../middlewares/logDBMiddleware");
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const loggedMiddleware = require('../middlewares/loggedMiddleware');
+
+
 const multer  = require('multer');
 
 var storage = multer.diskStorage({
@@ -13,5 +18,13 @@ var storage = multer.diskStorage({
       cb(null, "user" + '-' + Date.now() + path.extname(file.originalname))
     }
   })
+
+  router.post("/register", logDBMiddleware, usersControllers.store);
+  router.get("/register", guestMiddleware, userController.register);
+  router.get("/contact", userController.contact);
+  router.get("/login",guestMiddleware, userController.login);
+  router.get("/profile", loggedMiddleware, userController.profile);
+  router.get("/logout", userController.logout);
+
 const upload = multer({ storage: storage })
 module.exports = router;
