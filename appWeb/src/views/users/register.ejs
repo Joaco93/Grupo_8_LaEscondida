@@ -12,7 +12,7 @@
         <h4>Completa tus datos</h4>
         <main>
             <section>
-                <form action="/" method="POST" class="formregister">
+                <form action="/register" method="POST" class="formregister"  enctype="multipart/form-data">
                     <label> Nombre y Apellido</label>
                     <input type="text" name="name" required placeholder="Nombre y apellido">
                     <label>Email</label>
@@ -23,7 +23,9 @@
                     <input type="password" name="repassword" required placeholder="Confirmar Contraseña">
                     <label>Fecha de Nacimiento</label>
                     <input type="date" name="birth" required>
-                    <p><a href=#>¿Ya tenés una cuenta? Iniciá sesión</a></p>
+                    <label>Seleccione Avatar</label>
+                    <input type="file" name="image-avatar">
+                    <p><a href='/login'>¿Ya tenés una cuenta? Iniciá sesión</a></p>
                     <button type="submit">Crear cuenta</button>
                 </form>
             </section>

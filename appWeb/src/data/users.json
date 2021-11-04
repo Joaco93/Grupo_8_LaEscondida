@@ -1,24 +1,18 @@
-{
-    "users":[
-        {
-            "id":1,
-            "first-name":"Carlos",
-            "last-name":"Sagan",
-            "email":"cosmos123@gmail.com",
-            "password":"",
-            "avatar":"",
-            "fecha-nacimiento":"1990-09-22"
-
-        },
-        {
-            "id":2,
-            "first-name":"Francisco",
-            "last-name":"Underwood",
-            "email":"frankunderwood@gmail.com",
-            "password":"",
-            "avatar":"",
-            "fecha-nacimiento":"1970-07-04"
-        }
-
-    ]
-}
+[
+  {
+    "id": 1,
+    "name": "Anabel Ramirez",
+    "email": "anabel@laescondida.com",
+    "password": "$2a$10$1Qssz3w.Z1s0NKYhRkS6eOUlK7bbA03LXDfmpTlNVRYAQcGUe/j3u",
+    "fechaDeNacimiento": "1993-11-15",
+    "avatar": ""
+  },
+  {
+    "id": 2,
+    "name": "Lucas Montes ",
+    "email": "lucas@laescondida.com",
+    "password": "$2a$10$SgeEIHL.Zs204QvXWNKD8eg.BPIy1uOUFrVfHf4izh6S16.GxlAc2",
+    "fechaDeNacimiento": "1994-04-08",
+    "avatar": ""
+  }
+]

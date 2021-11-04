@@ -1,15 +1,23 @@
 const fs = require("fs");
 const path = require('path');
 
-const users_db = path.join('data','users.json');
+const users_db = path.resolve(__dirname, './users.json');
 
 module.exports = {
-    getUsers: ()=> JSON.parse(fs.readFileSync(users_db, "utf-8")),
+    getUsers: () => {
+        let usersJson = fs.readFileSync(users_db, { encoding: 'utf-8' });
+        let users;
+        if (usersJson == "") {
+            users = [];
+        } else {
+            users = JSON.parse(usersJson);
+        }
+        return users
+    },
     setUsers: (data) => {
-        fs.appendFileSync(
+        fs.writeFileSync(
             users_db,
-            JSON.stringify(data, null, 2), 
-            "utf-8"
+            JSON.stringify(data, null, 2),
         );
     },
 };
