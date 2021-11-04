@@ -29,6 +29,10 @@ app.use('/login',rutasMain);
 
 app.use ('/contact', rutasMain);
 
+// Middlewares
+
+app.use(logMiddleware);
+
 app.use((req, res,next) => {
 	res.status(404).render('not-found.');
 });
