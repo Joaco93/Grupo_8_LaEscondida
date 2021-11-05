@@ -19,4 +19,15 @@ router.get('/login',userController.login);
 router.get('/register',userController.register);
 
 router.post('/register',upload.single("image-avatar"),userController.createUser);
+  const upload = multer({ storage: storage })
+
+
+ 
+  router.get("/register", guestMiddleware, userController.register);
+  router.get("/contact", userController.contact);
+  router.get("/login",guestMiddleware, userController.login);
+  router.get("/profile", loggedMiddleware, userController.profile);
+  router.get("/logout", userController.logout)
+
+
 module.exports = router;
