@@ -18,13 +18,15 @@ var storage = multer.diskStorage({
       cb(null, "user" + '-' + Date.now() + path.extname(file.originalname))
     }
   })
+  const upload = multer({ storage: storage })
 
-  router.post("/register", logDBMiddleware, usersControllers.store);
+
+ 
   router.get("/register", guestMiddleware, userController.register);
   router.get("/contact", userController.contact);
   router.get("/login",guestMiddleware, userController.login);
   router.get("/profile", loggedMiddleware, userController.profile);
-  router.get("/logout", userController.logout);
+  router.get("/logout", userController.logout)
 
-const upload = multer({ storage: storage })
+
 module.exports = router;
