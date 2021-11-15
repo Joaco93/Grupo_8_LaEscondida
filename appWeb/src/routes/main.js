@@ -4,7 +4,6 @@ const router = express.Router();
 const rutasProduct = require('./product');
 const rutasUser = require('./users');
 
-
 router.get('/', mainController.home);
 router.get('/login',rutasUser);
 router.get('/register',rutasUser);
@@ -17,9 +16,9 @@ router.get('/products/create',rutasProduct);
 router.get('/products/:id',rutasProduct);
 router.get('/products/:id/edit',rutasProduct);
 
-router.post('/register',rutasUser);
 
-router.post('/products/create',rutasProduct);
+router.post('/register',rutasUser);
+router. post ('products/create', rutasProduct)
 
 router.put('/products/:id',rutasProduct);
 

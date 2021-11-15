@@ -1,6 +1,6 @@
 const path = require("path");
 const fileJson = require('../data/jsonUsers');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 const controlador = {
     // Formulario de registro
