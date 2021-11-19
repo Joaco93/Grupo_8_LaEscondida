@@ -9,9 +9,9 @@ Ivan ledesma
 
 
 
-Nuestro sitio se dedicara a la venta de _ _ _bebidas alcoholicas e incluyen diferentes categoríaas._ _ _
+Nuestro sitio se dedicara a la venta de **bebidas alcoholicas e incluyen diferentes categoríaas.**
 
-Nuestra audiencia está enfocada a _ _ _las personas mayores a 18 años._ _ _
+Nuestra audiencia está enfocada a **las personas mayores a 18 años.**
 
 **Sitios de referencia**
 - https://www.appbar.com.ar/catalogo?gclid=Cj0KCQjwssyJBhDXARIsAK98ITRIU5_yunP3FTIikVVlAF7aGre3wPnLopZ2kHCu9uR08gwOMUMQ9BoaAmIeEALw_wcB
