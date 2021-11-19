@@ -1,6 +1,6 @@
 const path = require("path");
 const fileJson = require('../data/jsonUsers');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 const controlador = {
     // Formulario de registro
@@ -39,6 +39,41 @@ const controlador = {
         users.push(newUser);
         fileJson.setUsers(users);
         res.redirect('/');
-    }
+    }, 
+    //Proceso de login
+    loginProcess: (req,res) => { 
+        let userToLogin = user.findByEmail(req.body.email);
+        if(userToLogin) {
+            let isOkThePassword = bcrypt.compareSync(req.body.password, userToLogin.password);
+            if (isOkThePassword) {
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+
+                if(req.body.remember_user) {
+					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+                }
+            } 
+            return res.render('users/login', {
+                errors: {
+                    email: {
+                        msg: 'Contraseña incorrecta'
+                    }
+                }
+            });
+        }
+    
+        return res.render('users/login', {
+            errors: {
+                email: {
+                    msg: 'El email ingresado no está registrado'
+                }
+            }
+        });
+    },
+    logout: (req, res) => {
+        res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
+	}
 }
 module.exports = controlador;

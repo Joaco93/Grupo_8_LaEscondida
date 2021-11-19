@@ -1,23 +1,29 @@
-Nombre de la empresa: La Escondida 
+**Nombre de la empresa:** La Escondida 
 
-Integrantes 
+**Integrantes**
 
-Rocio Caballero
-Joaquin Fischer
-Ivan ledesma 
-Lucas Montes
-
-
-
--Nuestro sitio se dedicara a la venta de bebidas alcoholicas que incluyen diferentes categorias
-
--Nuestra audiencia seran las personas mayores a 18 años 
-
-Sitios de referencia =         https://www.appbar.com.ar/catalogo?gclid=Cj0KCQjwssyJBhDXARIsAK98ITRIU5_yunP3FTIikVVlAF7aGre3wPnLopZ2kHCu9uR08gwOMUMQ9BoaAmIeEALw_wcB
-                               https://shopalonsoguerrerowines.com/?utm_source=google&utm_medium=search&gclid=Cj0KCQjwssyJBhDXARIsAK98ITQjE72bgjlpeJidPObjzNc0i91WNldQhsb_cxAN3ateAAYPQwGfkLcaAhSeEALw_wcB
-                               https://frappe.com.ar/
-                               https://siempreencasa.com.ar/?gclid=Cj0KCQjwssyJBhDXARIsAK98ITR_HN_M4JNEz67IFMOzNFh8AFmpgf34q6rEBIRYUU9LDSd-kI2hwq4aAqHTEALw_wcB
-                               https://www.outletdebebidas.com.ar/
+- Rocio Caballero
+- Lucas Montes
+- Joaquin Fischer
+- Ivan Ledesma 
 
 
-Link Trello: https://trello.com/b/1aV39tRE/sprint-4
+
+Nuestro sitio se dedicara a la venta de **bebidas alcoholicas e incluyen diferentes categoríaas.**
+
+Nuestra audiencia está enfocada a **las personas mayores a 18 años.**
+
+**Sitios de referencia**
+- https://www.appbar.com.ar/catalogo?gclid=Cj0KCQjwssyJBhDXARIsAK98ITRIU5_yunP3FTIikVVlAF7aGre3wPnLopZ2kHCu9uR08gwOMUMQ9BoaAmIeEALw_wcB
+
+- https://shopalonsoguerrerowines.com/?utm_source=google&utm_medium=search&gclid=Cj0KCQjwssyJBhDXARIsAK98ITQjE72bgjlpeJidPObjzNc0i91WNldQhsb_cxAN3ateAAYPQwGfkLcaAhSeEALw_wcB
+
+- https://frappe.com.ar/
+
+- https://siempreencasa.com.ar/?gclid=Cj0KCQjwssyJBhDXARIsAK98ITR_HN_M4JNEz67IFMOzNFh8AFmpgf34q6rEBIRYUU9LDSd-kI2hwq4aAqHTEALw_wcB
+                               
+- https://www.outletdebebidas.com.ar/
+
+
+**Link Trello:**
+ https://trello.com/b/1aV39tRE/sprint-4
