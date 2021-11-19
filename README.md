@@ -2,10 +2,10 @@
 
 **Integrantes**
 
-[ ]Rocio Caballero
+- Rocio Caballero
 Joaquin Fischer
 Ivan ledesma 
-[ ]Lucas Montes
+- Lucas Montes
 
 
 
