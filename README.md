@@ -3,9 +3,9 @@
 **Integrantes**
 
 - Rocio Caballero
-Joaquin Fischer
-Ivan ledesma 
 - Lucas Montes
+- Joaquin Fischer
+- Ivan Ledesma 
 
 
 
