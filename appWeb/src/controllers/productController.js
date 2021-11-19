@@ -1,6 +1,8 @@
 const path = require("path");
 const fileJson = require('../data/jsonProducts');
 const productAux = require('../../public/js/libs/functions/ordenarProducts');
+const Sequelize = require("sequelize");
+const db = require("../database/models");
 
 const controlador = {
    lista: (req, res) => {
