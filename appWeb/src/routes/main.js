@@ -18,7 +18,7 @@ router.get('/products/:id/edit',rutasProduct);
 
 
 router.post('/register',rutasUser);
-router. post ('products/create', rutasProduct)
+router.post ('products/create', rutasProduct)
 
 router.put('/products/:id',rutasProduct);
 

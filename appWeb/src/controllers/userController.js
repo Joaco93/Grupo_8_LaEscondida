@@ -77,6 +77,9 @@ const controlador = {
 	},
     profile: (req,res) => {
         res.render(path.resolve('../views/users/profile.ejs'));
+    },
+    contact : (req,res) => {
+        res.render(path.resolve('../views/contact.ejs'));
     }
 }
 module.exports = controlador;
