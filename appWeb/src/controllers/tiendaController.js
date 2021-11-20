@@ -1,5 +1,5 @@
-const product = require('../models/product');
-const user = requiere('../models/user')
+const product = require('../models/Product');
+const user = requiere('../models/Usuario')
 const fs = require ("fs")
 
 const controlador = {
@@ -40,4 +40,3 @@ const controlador = {
 
 module.exports = controlador ;
 
-module.exports = controlador;
