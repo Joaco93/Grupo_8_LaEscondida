@@ -31,5 +31,5 @@ module.exports = (sequelize, dataTypes) => {
       timestamps: false,
     };
   
-    return Users;
+    return alias;
   };

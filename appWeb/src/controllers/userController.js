@@ -74,6 +74,9 @@ const controlador = {
         res.clearCookie('userEmail');
 		req.session.destroy();
 		return res.redirect('/');
-	}
+	},
+    profile: (req,res) => {
+        res.render(path.resolve('../views/users/profile.ejs'));
+    }
 }
 module.exports = controlador;

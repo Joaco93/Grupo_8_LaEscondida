@@ -32,7 +32,7 @@
     "description": "Equilibrado Chardonnay de color amarillo claro con matices verdes. Su aroma a pera y ananá",
     "image": "vino-tinto-LaMascota.png",
     "category": "Vino",
-    "size": "60 ml",
+    "size": "600 ml",
     "price": "62"
   },
   {
@@ -51,7 +51,7 @@
     "image": "vino-blanco-PerroCallejero.png",
     "category": "Vino",
     "size": "750 ml",
-    "price": "35"
+    "price": "35" 
   },
   {
     "id": 7,
