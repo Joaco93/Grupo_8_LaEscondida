@@ -9,7 +9,7 @@
 
 
 
-Nuestro sitio se dedicara a la venta de **bebidas alcoholicas e incluyen diferentes categoríaas.**
+Nuestro sitio se dedicara a la venta de **bebidas alcoholicas e incluyen diferentes categorías.**
 
 Nuestra audiencia está enfocada a **las personas mayores a 18 años.**
 
