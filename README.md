@@ -26,4 +26,4 @@ Nuestra audiencia está enfocada a **las personas mayores a 18 años.**
 
 
 **Link Trello:**
-https://trello.com/b/mmhLYKIm/sprint-5-6
+https://trello.com/b/AMFpGKwx/sprint-7
