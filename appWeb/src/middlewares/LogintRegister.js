@@ -1,0 +1,14 @@
+const path = require('path');
+const { body } = require('express-validator');
+const db = require('../database/models');
+
+const validations = [
+	body('email')
+		.notEmpty()
+		.withMessage('Escribe tu correo electrónico')
+		.isEmail()
+		.withMessage('Debes escribir un formato de correo válido'),
+	body('password').notEmpty().withMessage('Escribe tu contraseña'),
+];
+
+module.exports = validations;
