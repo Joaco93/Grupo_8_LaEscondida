@@ -23,8 +23,6 @@ app.use(methodOverride('_method'));
 app.use (cookies());
 app.use (session({secret:"Secret", resave:false, saveUninitialized:false,}));
 
-
-
 app.set('view engine','ejs');
 
 app.use('/',rutasMain);
