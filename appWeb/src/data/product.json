@@ -2,7 +2,6 @@
   {
     "id": 1,
     "name": "Kunstmann",
-    "description": "Con intensidad alta de aromas a naranjas, duraznos, además de tostado y caramelo, su paladar es de cuerpo medio, su espuma llena la boca con mucha carga frutal y leve amargor.",
     "image": "cervezaKunstmann.png",
     "category": "Cerveza",
     "size": "330 ml",
@@ -51,7 +50,7 @@
     "image": "vino-blanco-PerroCallejero.png",
     "category": "Vino",
     "size": "750 ml",
-    "price": "35" 
+    "price": "35"
   },
   {
     "id": 7,

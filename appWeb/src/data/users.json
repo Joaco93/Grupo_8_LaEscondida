@@ -14,5 +14,13 @@
     "password": "$2a$10$SgeEIHL.Zs204QvXWNKD8eg.BPIy1uOUFrVfHf4izh6S16.GxlAc2",
     "fechaDeNacimiento": "1994-04-08",
     "avatar": ""
+  },
+  {
+    "id": 3,
+    "name": "Ignacio",
+    "email": "ignacio@laescondida.com",
+    "password": "$2b$10$IYk8arw9Qtt9OPS6z7pj7.MjDEBbsFUOORnWlWDLtEa.c2MEsu2si",
+    "fechaDeNacimiento": "1993-10-05",
+    "avatar": ""
   }
 ]

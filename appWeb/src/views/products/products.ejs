@@ -45,24 +45,26 @@
         <!-- Page content -->
         <section>
             <h1 class="title">Lista de productos</h1>
-            <% let i=0%>
+            <% let i=0 , k = 0%>
                 <% while(i < products.length){%>
-                    <% let key=products[i].category%>
+                    <% let key=products[i].Categoria_id%>
                         <h3 class="title-product">
-                            <%= products[i].category%>
+                            <%= categorias[k].idCategoria %>
+                            <%= categorias[k].name%>
                         </h3>
                         <ul class="product">
-                            <% while(i < products.length && key==products[i].category){%>
+                            <% while(i < products.length && key==products[i].Categoria_id){%>
 
                                 <li class="product-id">
-                                        <a href="/products/<%= products[i].id%>">
+                                        <a href="/products/<%= products[i].idProductos%>">
                                             <%= products[i].name%>
                                         </a>
                                 </li>
                                 <% i++%>
-                                    <% } %>
+                            <% } %>
                         </ul>
-                        <% } %>
+                    <% k++%>
+                <% } %>
 
         </section>
     </main>

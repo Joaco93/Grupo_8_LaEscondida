@@ -1,0 +1,28 @@
+  <!--HEAD-->
+  <%- include('../partials/head') %>
+  
+    <!-- Header -->
+    <%- include('../partials/header')%>
+
+    <!-- Page content -->
+    <section class="form-register">
+        <h4>Tus datos</h4>
+        <main>
+            <section>
+                <form action="/user/<%=usuario.idUsuarios%>?_method=PUT" method="POST" class="formregister"  enctype="multipart/form-data">
+                    
+                    <label> Nombre y Apellido</label>
+                    <input type="text" name="name" value="<%= usuario.name %>">
+                    <label>Email</label>
+                    <input type="email" name="email" value="<%=usuario.email %>">
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" name="birth" value= "<%= usuario.fechaNacimiento%>">
+                    <label>Seleccione Avatar</label>
+                    <input type="file" name="image">
+                    <input type="submit" name="guardar" value="Guardar">
+                </form>
+            </section>
+        </main>
+    </section>
+    <!-- Footer -->
+    <%- include('../partials/footer') %>

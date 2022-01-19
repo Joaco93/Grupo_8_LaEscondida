@@ -56,7 +56,12 @@
                     <%= productResult.description%>
                 </h4>
                 <h4 class="category-product">
-                    <%= productResult.category%>
+                    <% for( let i = 0; i < categorias.length;i++){ %>
+                        <%if(categorias[i].idCategoria == productResult.Categoria_id){ %>
+                           <%= categorias[i].name%>
+                         <% } %>
+                    <% } %>
+                    
                 </h4>
                 <h4 class="category-size">
                     <%= productResult.size%>
@@ -65,7 +70,7 @@
                 </h4>
                 </article>
         </section>
-        <a href="/products/<%= productResult.id%>/edit"><input type="submit" name="edit" value="Editar"></a>
+        <a href="/products/<%= productResult.idProductos%>/edit"><input type="submit" name="edit" value="Editar"></a>
         <form action="/products/<%= productResult.id%>?_method=DELETE" method="POST" enctype="multipart/form-data">
         <input type="submit" name="eliminar" value="Eliminar">
         </form>
@@ -74,7 +79,3 @@
     <div>
         <%- include('../partials/footer') %>
     </div>
-
-</body>
-
-</html>

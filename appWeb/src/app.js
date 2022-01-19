@@ -9,8 +9,8 @@ const session = require('express-session');
 const cookies = require('cookie-parser');
 
 
-var logMiddleware = require('./middlewares/logMiddleware');
-const userLoggedMiddleware = require("./middlewares/userLoggedMidleware")
+//var logMiddleware = require('./middlewares/logMiddleware');
+//const userLoggedMiddleware = require("./middlewares/userLoggedMidleware")
 const { use } = require('./routes/users');
 
 const app = express();
@@ -44,8 +44,8 @@ app.get('/productCart', (req,res)=> res.render(path.resolve(__dirname, "../views
 
 // Middlewares
 
-app.use(logMiddleware);
-app.use(userLoggedMiddleware)
+//app.use(logMiddleware);
+//app.use(userLoggedMiddleware);
 
 
 app.use((req, res,next) => {

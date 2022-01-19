@@ -6,70 +6,95 @@ const db = require("../database/models");
 
 const controlador = {
    lista: (req, res) => {
-      let products = fileJson.getProducts();
-      productAux.ordenarProducts(products);
-      console.log(products);
-      res.render(path.resolve(__dirname, "../views/products/products.ejs"), { 'products': products});
+      let categorias = db.Categorias.findAll();
+      let products = db.Productos.findAll();
+
+      Promise.all([categorias, products])
+         .then(function ([categorias, products]) {
+            productAux.ordenarProducts(products);
+            res.render(path.resolve(__dirname, "../views/products/products.ejs"), { products: products, categorias: categorias });
+         }).catch((error) => {
+            console.log(error)
+         })
+
    },
    create: (req, res) => {
-      res.render(path.resolve(__dirname, "../views/products/registerProduct.ejs"));
+      db.Categorias.findAll()
+         .then(function (categorias) {
+            res.render(path.resolve(__dirname, "../views/products/registerProduct.ejs"), { categorias: categorias });
+         }).catch((error) => {
+            console.log(error);
+         })
    },
    createProduct: (req, res) => {
-      let newProduct = req.body;      
-      newProduct.image = req.file.filename;
+      let img;
+      if (req.body.avatar === undefined) {
+         img = "Sin imagen";
+      } else {
+         img = req.body.product_image;
+      }
+      db.Productos.create({
+         name: req.body.name,
+         description: req.body.descripcion,
+         avatar: img,
+         Categoria_id: req.body.category,
+         size: req.body.size,
+         price: req.body.price
+      }).catch((error) => {
+         console.log(error)
+      })
 
-      let products = fileJson.getProducts();
-
-      let lastId = products[products.length - 1].id;
-      lastId++;
-      newProduct.id = lastId;
-
-      products.push(newProduct);
-      //productAux.ordenarProducts(products);
-      fileJson.setProducts(products);
-      
-      //res.send("Producto agregado!!");
       res.redirect("/products");
    },
    productDetails: (req, res) => {
-      let products = fileJson.getProducts();
-      let loQueBuscoElUsuario = req.params;
-      let productResult = products.find(products => products.id == loQueBuscoElUsuario.id);      
-      
-      res.render(path.resolve(__dirname, "../views/products/productId.ejs"), {productResult});
-   },
-   edit: (req,res) => {
-      let products = fileJson.getProducts();
-      let idProduct = req.params.id;
-     
-      let productToEdit =  products[idProduct-1];
-      res.render(path.resolve(__dirname, "../views/products/productIdEdit.ejs"), {productToEdit});
-   },
-   actualizar: (req,res) =>{
-      let products = fileJson.getProducts();
-      let productEdit = req.body;
-      productEdit.id = req.params.id;
+      let categorias = db.Categorias.findAll();
+      let productResult = db.Productos.findByPk(req.params.id);
+         Promise.all([categorias,productResult])
+         .then(function ([categorias,productResult]) {
+            res.render(path.resolve(__dirname, "../views/products/productId.ejs"), { categorias,productResult });
+         })
 
-         for(let i = 0; i < products.length;i++){
-           if(productEdit.id == products[i].id){
-               products[i].name = productEdit.name;
-               products[i].description = productEdit.description;
-               products[i].category = productEdit.category;
-               products[i].size = productEdit.size;
-               products[i].price = productEdit.price;
-           }
-         }
-         fileJson.setProducts(products);
-      //res.send("Se modifico el producto!!");
-      res.redirect("/products");
    },
-   delete: (req,res) =>{
-      let products = fileJson.getProducts();
-      let idProduct = req.params.id;
-      
-      products = products.filter(producto => producto.id != idProduct);
-      fileJson.setProducts(products);
-      //res.send("Producto eliminado!!");
+   edit: (req, res) => {
+      let categorias = db.Categorias.findAll();
+      let productToEdit =  db.Productos.findByPk(req.params.id);
+      Promise.all([categorias,productToEdit])
+         .then(function ([categorias,productToEdit]) {
+            res.render(path.resolve(__dirname, "../views/products/productIdEdit.ejs"), { categorias,productToEdit });
+         }).catch((error) => {
+            console.log(error)
+         })
+
+   },
+   actualizar: (req, res) => {
+      let img;
+      if (req.body.avatar === undefined) {
+         img = "Sin imagen";
+      } else {
+         img = req.body.product_image;
+      }
+      db.Productos.update({
+         name: req.body.name,
+         description: req.body.descripcion,
+         avatar: img,
+         Categoria_id: req.body.category,
+         size: req.body.size,
+         price: req.body.price
+     },{
+         where : {
+             id: req.params.id
+         }
+     }).catch((error) => {
+         console.log(error)
+     })
+      res.redirect("/products/" + req.params.id);
+   },
+   delete: (req, res) => {
+      db.Productos.destroy({
+         where:{
+            id: req.params.id
+         }
+      })
       res.redirect("/products");
    }
 };

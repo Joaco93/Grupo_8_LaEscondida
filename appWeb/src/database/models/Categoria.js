@@ -1,7 +1,7 @@
 module.exports = (sequelize, dataTypes) => {
     let alias = "Categorias";
     let cols = {
-      id: {
+      idCategoria: {
         type: dataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -12,7 +12,7 @@ module.exports = (sequelize, dataTypes) => {
       }
     };
     let config = {
-      tableName: "Categoria",
+      tableName: "categoria",
       timestamps: false,
     };
     
