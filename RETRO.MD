@@ -1,4 +1,8 @@
-RETROSPECTIVA 4
+RETROSPECTIVA 7
+
+Durante todo el proceso, fue bastante dificil coordinar los tiempos para poder reunirnos, pero finalmente lo pudimos hacer.
+Hay que tener en cuenta también que por problemas personales de salud, ambos no pudimos dar el 100% de lo que dimos en anteriores sprint, y eso se nota.
+
 Seguir haciendo.
 ● Las reuniones en los horarios pactados.
 
@@ -33,3 +37,4 @@ Hacer menos.
 ● Cometer errores de tipeo y faltas de ortografía.
 
 ● Dejar cosas sin definir en el momento en que se hablan.
+
