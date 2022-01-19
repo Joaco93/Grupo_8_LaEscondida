@@ -14,5 +14,21 @@
     "password": "$2a$10$SgeEIHL.Zs204QvXWNKD8eg.BPIy1uOUFrVfHf4izh6S16.GxlAc2",
     "fechaDeNacimiento": "1994-04-08",
     "avatar": ""
+  },
+  {
+    "id": 3,
+    "name": "Nicolas solop",
+    "email": "drcaballero25@gmail.com",
+    "password": "$2b$10$yj6vS/k2Df/xJTiN90v6reSt4j/gwxHVP3AS6MriHsfUiYi9vLLEi",
+    "fechaDeNacimiento": "2222-02-11",
+    "avatar": ""
+  },
+  {
+    "id": 4,
+    "name": "Maria del Rocio",
+    "email": "drcaballero25@gmail.com",
+    "password": "$2b$10$W/Y1Y0x7mrcTGAbrO355GeI/2V51I5yyRaN3RFa0j5bEhuKYQ0nUu",
+    "fechaDeNacimiento": "1991-02-28",
+    "avatar": ""
   }
 ]

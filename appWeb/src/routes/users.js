@@ -6,6 +6,14 @@ const userController = require ('../controllers/userController');
 const guestMiddleware = require('../middlewares/userLoggedMidleware');
 const loggedMiddleware = require('../middlewares/logMiddleware');
 
+const {body} = require("express-validator");
+const validaciones = [
+  body("nombre-y-apellido").notEmpty().withMessage ("Debes tu nombre y apellido"),
+  body("email").isEmail().withMessage("Debes completar con un email válido"),
+  body("contraseña").notEmpty().withMessage("Debes completar el campo de la contraseña"),
+  body("fecha-de-nacimiento").notEmpty().withMessage("Debes colocar tu fecha de nacimiento"),
+]
+
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, path.join(__dirname, '../../public/images/uploads/users'));

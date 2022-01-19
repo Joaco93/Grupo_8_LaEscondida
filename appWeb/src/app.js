@@ -45,7 +45,7 @@ app.get('/productCart', (req,res)=> res.render(path.resolve(__dirname, "../views
 // Middlewares
 
 app.use(logMiddleware);
-app.use(userLoggedMiddleware)
+app.use(userLoggedMiddleware);
 
 
 app.use((req, res,next) => {

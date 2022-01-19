@@ -1,6 +1,9 @@
 const product = require('../models/Product');
 const user = requiere('../models/Usuario')
 const fs = require ("fs")
+const db = require("../database/models");
+const {Op,where} = require("sequelize");
+const Sequelize = require("sequelize")
 
 const controlador = {
     products: (req,res)=>{
