@@ -15,11 +15,23 @@
     <!-- Header -->
     <header>
         <div class="user">
-            <a href="/login"><i class="fas fa-user"></a></i>
-            <ul>
-                <li><a href="/register">Registrarse</a></li>
-                <li><a href="/login">Login</a></li>
-            </ul>
+            <% if(locals.isLogged){ %>
+                <a href="/login"><i class="fas fa-user"></a></i>
+                <%= locals.userLogged.name %>
+                    <select>
+                        <option>
+                            <a href="/">Logout</a>
+                        </option>
+                        <option>
+                            <a href="/profile">Perfil</a>
+                        </option>
+                    </select>
+                    <% } else {%>
+                        <ul>
+                            <li><a href="/register">Registrarse</a></li>
+                            <li><a href="/login">Login</a></li>
+                        </ul>
+                        <% } %>
         </div>
         <form action="/" method="POST" class="search">
             <input type="search" name="buscador" placeholder="Buscar Productos...">

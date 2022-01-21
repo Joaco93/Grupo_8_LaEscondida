@@ -4,6 +4,7 @@ const productAux = require('../../public/js/libs/functions/ordenarProducts');
 const Sequelize = require("sequelize");
 const db = require("../database/models");
 
+
 const controlador = {
    lista: (req, res) => {
       let categorias = db.Categorias.findAll();
@@ -49,18 +50,18 @@ const controlador = {
    productDetails: (req, res) => {
       let categorias = db.Categorias.findAll();
       let productResult = db.Productos.findByPk(req.params.id);
-         Promise.all([categorias,productResult])
-         .then(function ([categorias,productResult]) {
-            res.render(path.resolve(__dirname, "../views/products/productId.ejs"), { categorias,productResult });
+      Promise.all([categorias, productResult])
+         .then(function ([categorias, productResult]) {
+            res.render(path.resolve(__dirname, "../views/products/productId.ejs"), { categorias, productResult });
          })
 
    },
    edit: (req, res) => {
       let categorias = db.Categorias.findAll();
-      let productToEdit =  db.Productos.findByPk(req.params.id);
-      Promise.all([categorias,productToEdit])
-         .then(function ([categorias,productToEdit]) {
-            res.render(path.resolve(__dirname, "../views/products/productIdEdit.ejs"), { categorias,productToEdit });
+      let productToEdit = db.Productos.findByPk(req.params.id);
+      Promise.all([categorias, productToEdit])
+         .then(function ([categorias, productToEdit]) {
+            res.render(path.resolve(__dirname, "../views/products/productIdEdit.ejs"), { categorias, productToEdit });
          }).catch((error) => {
             console.log(error)
          })
@@ -80,22 +81,35 @@ const controlador = {
          Categoria_id: req.body.category,
          size: req.body.size,
          price: req.body.price
-     },{
-         where : {
-             id: req.params.id
+      }, {
+         where: {
+            id: req.params.id
          }
-     }).catch((error) => {
+      }).catch((error) => {
          console.log(error)
-     })
+      })
       res.redirect("/products/" + req.params.id);
    },
    delete: (req, res) => {
       db.Productos.destroy({
-         where:{
+         where: {
             id: req.params.id
          }
       })
       res.redirect("/products");
-   }
+   },
+   search: (req, res) => {
+      const search = req.body.buscador;
+      console.log(search);
+      try {
+         db.Productos.findAll()
+            .then(function (resultados) {
+               res.render(path.resolve(__dirname, "../views/products/searchProducts.ejs"), { resultados })
+            })
+      }
+      catch (error) {
+         console.log(error)
+      }
+   },
 };
 module.exports = controlador;

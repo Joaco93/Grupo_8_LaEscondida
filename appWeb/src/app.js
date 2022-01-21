@@ -10,20 +10,24 @@ const cookies = require('cookie-parser');
 
 
 //var logMiddleware = require('./middlewares/logMiddleware');
-//const userLoggedMiddleware = require("./middlewares/userLoggedMidleware")
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
 const { use } = require('./routes/users');
 
 const app = express();
 
 app.use(express.static('../public'));
 app.use(cors());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(methodOverride('_method'));	
 app.use (cookies());
 app.use (session({secret:"Secret", resave:false, saveUninitialized:false,}));
 
 app.set('view engine','ejs');
+// Middlewares
+
+app.use(cookies());
+app.use(userLoggedMiddleware);
 
 app.use('/',rutasMain);
 app.use('/',rutasUser)
@@ -38,13 +42,7 @@ app.use('/login',rutasMain);
 
 app.use ('/contact', rutasMain);
 
-app.get('/productCart', (req,res)=> res.render(path.resolve(__dirname, "../views", "productCart.ejs")))
-
-// Middlewares
-
-//app.use(logMiddleware);
-//app.use(userLoggedMiddleware);
-
+app.get('/productCart', (req,res)=> res.render(path.resolve(__dirname, "../views", "productCart.ejs")));
 
 app.use((req, res,next) => {
 	res.status(404).render('not-found.');

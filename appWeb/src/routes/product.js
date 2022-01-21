@@ -18,8 +18,10 @@ const upload = multer({storage:storage});
 
 router.get('/products', productController.lista);
 router.get('/products/create',productController.create);
+router.get('/products/search',productController.search);
 router.get('/products/:id',productController.productDetails);
 router.get('/products/:id/edit',productController.edit);
+
 
 router.post('/products/create',upload.single("product-image"),productController.createProduct);
 

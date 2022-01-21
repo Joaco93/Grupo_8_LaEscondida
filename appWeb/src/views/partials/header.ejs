@@ -10,15 +10,28 @@
     </div>
 
     <div class="user">
-        <a href="/login"><i class="fas fa-user"></a></i>
-        <ul>
-            <li><a href="/register">Registrarse</a></li>
-            <li><a href="/login">Login</a></li>
-        </ul>
+        <% if(locals.isLogged){ %>
+            <a href="/login"><i class="fas fa-user"></a></i>
+            <%= locals.userLogged.name %>
+                <select>
+                    <option>
+                        <a href="/">Logout</a>
+                    </option>
+                    <option>
+                        <a href="/profile">Perfil</a>
+                    </option>
+                </select>
+                <% } else {%>
+                    <ul>
+                        <li><a href="/register">Registrarse</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                    <% } %>
     </div>
 
-    <form action="/" method="POST" class="search">
+    <form action="/products/search" method="POST" class="search" enctype="multipart/form-data">
         <input type="search" name="buscador" placeholder="Buscar Productos...">
         <i class="fas fa-search"></i>
+        <a href="/products/search"><input type="submit" name="buscar" value="Buscar"></a>
     </form>
 </header>

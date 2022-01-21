@@ -1,32 +1,40 @@
-<!DOCTYPE html>
-<html lang="en"></html>
-  <!--HEAD-->
-  <%- include('../partials/head.ejs') %>
-  <body>
-  
+<!--HEAD-->
+<%- include('../partials/head.ejs') %>
+
     <!-- Header -->
     <%- include('../partials/header')%>
 
-    <!-- Page content -->
-    <body>
+        <!-- Page content -->
         <section class="form-login">
             <h4>Iniciar sesión </h4>
             <main>
                 <section>
-                    <form action="/" method="POST" class="formlogin">
+                    <form action="/login" method="POST" class="formlogin" enctype="multipart/form-data">
                         <label>Email</label>
-                        <input type="text" name="email" required placeholder="Tu dirección de correo">
-                        <label>Contraseña</label>
-                        <input type="password" name="password" required placeholder="Contraseña">
-                        <p><a href=#>¿Olvidaste tu contraseña?</a></p>
-                        <button type="submit">Enviar</button>
+                        <input type="text" name="email" placeholder="Tu dirección de correo"
+                            class="<%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                            value="<%= locals.oldData ? oldData.email : null %>">
+                        <% if(locals.errors && errors.email) { %>
+                            <div>
+                                <%= errors.email.msg %>
+                            </div>
+                            <% } %>
+                                <label>Contraseña</label>
+                                <input type="password" name="password" placeholder="Contraseña"
+                                    class="<%= locals.errors && errors.password ? 'is-invalid' : null %>">
+                                <% if(locals.errors && errors.password) { %>
+                                    <div>
+                                        <%= errors.password.msg %>
+                                    </div>
+                                    <% } %>
+                                     <label>
+                                         <input type= "checkbox" name="remember_user"> Recordar Usuario 
+                                     </label>
+                                        <p><a href=#>¿Olvidaste tu contraseña?</a></p>
+                                        <button type="submit">Ingresar</button>
                     </form>
                 </section>
             </main>
         </section>
-        </body>
-    <!-- Footer -->
- <%- include('../partials/footer') %>
-</div>
-</body>
-</html>       
+        <!-- Footer -->
+        <%- include('../partials/footer') %>
