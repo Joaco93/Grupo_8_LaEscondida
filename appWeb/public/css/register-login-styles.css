@@ -1,0 +1,61 @@
+
+.form-register h4, .form-login h4 {
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top:30px;
+}
+
+.formregister, .formlogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+    margin:auto;
+    margin-top:30px;
+}
+
+.formregister label, .formlogin label{
+    width: 90%;
+    padding: 20px 0px 10px 0px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.formlogin input, .formlogin button, .formregister input, .formregister button{
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formregister div{
+   align-self: center;
+}
+
+.formregister div input, label{
+   align-self: center;
+   width: 4vw;
+}
+.formlogin div input, label{
+    align-self: center;
+    width: 4vw;
+}
+
+.formlogin button, .formregister button{
+    color: white;
+    background-color:#293771;
+    margin-top: 30px;
+}
+
+.form-login a, .form-register a{
+     color:#293771;
+     margin: 5px;
+     text-decoration: none;
+     font-weight: bold;
+}
+.form-login a:hover, .form-register a:hover{
+    text-decoration: underline;
+    color:indigo;
+}

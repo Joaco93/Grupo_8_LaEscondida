@@ -1,0 +1,30 @@
+
+  <!--HEAD-->
+  <%- include('../partials/head') %>
+  
+    <!-- Header -->
+    <%- include('../partials/header')%>
+
+    <!-- Page content -->
+    <section class="form-register">
+        <h4>Tus datos</h4>
+        <main>
+            <section>
+                    <% if(usuario.avatar != null && usuario.avatar != "sin avatar")%>
+                    <% { %>
+                        <img src="/images/uploads/users/<%= usuario.avatar%>" alt="<%= usuario.name%>">
+                    <% } %>
+                    
+                    <h2> Nombre y Apellido</h2>
+                    <h3><%= usuario.name %></h3>
+                    <h2>Email</h2>
+                    <h3><%= usuario.email %></h3>
+                    <h2>Fecha de Nacimiento</h2>
+                    <h3><%= usuario.fechaNacimiento %></h3>
+                   
+                    <a href="/user/<%= usuario.idUsuarios%>/edit"><input type="submit" name="edit" value="Editar"></a>
+            </section>
+        </main>
+    </section>
+    <!-- Footer -->
+<%- include('../partials/footer') %>

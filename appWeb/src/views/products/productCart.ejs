@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <!--HEAD-->
+ 
+  <%- include('../partials/head') %>
+  <link rel="stylesheet" href="/css/carrito-styles.css">
+  <body>
+  
+    <!-- Header -->
+    <%- include('../partials/header') %>
+
+    <main> 
+      <section class="contenedor-seccion1">
+          <h1 class="titulo-carrito">Carrito de Compras</h1>
+          <div class="contenedor__carritos_01y02">
+              <div class="carrito_01">
+                 <img src="/images/bebidas/cervezaKunstmann.png" class="img__cervezaKunstmann__carrito" alt="">
+                 <p class="cerveza">Kunstmann</p><p class="size">330 ml</p><div class="cantidad">1</div><p class="price">$85</p>
+              </div>
+              <div class="carrito_02">
+                  <img src="/images/bebidas/vino-tinto-LaMascota.png" class="img__lamascota__carrito" alt="">
+                  <p class="vino">La Mascota</p><p class="size">750 ml</p><div class="cantidad">1</div><p class="price">$62</p>
+              </div>
+          </div>
+      </section>
+      </main>
+      <!-- Footer -->
+      <%- include('../partials/footer') %>
+    </div>
+  </body>
+</html>

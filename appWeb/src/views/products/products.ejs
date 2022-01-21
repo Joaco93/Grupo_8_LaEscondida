@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+<!--HEAD-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - La Escondida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/productDetail-styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="user">
+            <a href="/login"><i class="fas fa-user"></a></i>
+            <ul>
+                <li><a href="/register">Registrarse</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+        <form action="/" method="POST" class="search">
+            <input type="search" name="buscador" placeholder="Buscar Productos...">
+            <i class="fas fa-search"></i>
+        </form>
+
+        <div class="cart">
+            <a href="/productCart"><i class="fas fa-shopping-cart"></a></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#cervezas">Cervezas</a></li>
+                <li><a href="#vinos">Vinos</a></li>
+                <li><a href="#licores">Licores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Page content -->
+        <section>
+            <h1 class="title">Lista de productos</h1>
+            <% let i=0 , k = 0%>
+                <% while(i < products.length){%>
+                    <% let key=products[i].Categoria_id%>
+                        <h3 class="title-product">
+                            <%= categorias[k].idCategoria %>
+                            <%= categorias[k].name%>
+                        </h3>
+                        <ul class="product">
+                            <% while(i < products.length && key==products[i].Categoria_id){%>
+
+                                <li class="product-id">
+                                        <a href="/products/<%= products[i].idProductos%>">
+                                            <%= products[i].name%>
+                                        </a>
+                                </li>
+                                <% i++%>
+                            <% } %>
+                        </ul>
+                    <% k++%>
+                <% } %>
+
+        </section>
+    </main>
+    <!-- Footer -->
+    <div>
+        <%- include('../partials/footer') %>
+    </div>
+
+</body>
+
+</html>

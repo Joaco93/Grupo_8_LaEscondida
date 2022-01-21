@@ -1,0 +1,50 @@
+  <!--HEAD-->
+  <%- include('../partials/head') %>
+  
+    <!-- Header -->
+    <%- include('../partials/header')%>
+
+    <!-- Page content -->
+    <section class="form-register">
+        <h4>Completa tus datos</h4>
+        <main>
+            <section>
+                <form action="/products/<%= productToEdit.idProductos%>?_method=PUT" method="POST" class="formregister" enctype="multipart/form-data">
+                    <label for="name">Nombre del Producto</label>
+                    <input type="text" name="name" required value="<%= productToEdit.name%>" id="name">
+
+                    <label for="description">Descripcion</label>
+                    <textarea name="descripcion" id="description"><%= productToEdit.description%></textarea>
+                    
+                    <label for="product-image">Imagen de la bebida</label>
+                    <img src="/images/bebidas/<%= productToEdit.image%>" alt="<%= productToEdit.name%>">
+                    <input type="file" name="product-image" id="product_image">
+                    
+                    <label for="category">Categoria</label>
+                    <select name ="category">
+                        <% for(let i = 0; i < categorias.length;i++) { %>
+                            <%if(categorias[i].idCategoria == productToEdit.Categoria_id){ %>
+                               <option value ="<%= categorias[i].idCategoria %>" selected>
+                               <%= categorias[i].name %>
+                           </option>
+                            <% } else { %>
+                            <option value ="<%= categorias[i].idCategoria %>">
+                                <%= categorias[i].name %>
+                            </option>
+                               <% }  %>
+                        <% } %>
+                    </select>                   
+                    
+                    <label for="size">Tamaño</label>
+                    <input type="text" name="size" required id="size" value="<%= productToEdit.size%>">
+                    
+                    <label for="price">Precio</label>
+                    <input type="number" name="price" required id="price" value="<%= productToEdit.price %>">
+
+                    <input type="submit" value="Editar">
+                </form>
+            </section>
+        </main>
+    </section>
+    <!-- Footer -->
+<%- include('../partials/footer') %>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <!--HEAD-->
+  <%- include('./partials/head') %>
+  <body>
+  
+    <!-- Header -->
+    <%- include('./partials/header')%>
+
+    <!-- Page content -->
+    <main>
+    <div class="contact_form">
+
+        <div class="formulario">
+          <h1>CONTACTANOS</h1>
+          <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+
+
+          <p>
+            <label for="nombre" class="colocar nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre" class="inputs">
+          </p>
+
+          <p>
+            <label for="email" class="colocar email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir email" id="email" required="obligatorio" placeholder="Escribe tu Email" class="inputs">
+          </p>
+
+          <p>
+            <label for="telefone" class="colocar telefono">Teléfono</label>
+            <input type="tel" name="introducir telefono" id="telefono" placeholder="Escribe tu teléfono" class="inputs">
+          </p>
+
+
+          <p>
+            <label for="asunto" class="colocar asunto">Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir asunto" id="assunto" required="obligatorio"placeholder="Escribe un asunto" class="inputs">
+          </p>
+
+          <p>
+            <label for="mensaje" class="colocar mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"placeholder="Deja aquí tu comentario..."></textarea>
+          </p>
+
+          <button type="submit" name="enviar formulario" id="enviar" class="boton">
+            <p>Enviar</p>
+          </button>
+
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+
+        </div>
+    </main>
+    <!-- Footer -->
+ <%- include('./partials/footer') %>
+</div>
+</body>
+</html>       

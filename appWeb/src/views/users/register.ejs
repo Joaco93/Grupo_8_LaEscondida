@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <!--HEAD-->
+  <%- include('../partials/head') %>
+  <body>
+  
+    <!-- Header -->
+    <%- include('../partials/header')%>
+
+    <!-- Page content -->
+    <section class="form-register">
+        <h4>Completa tus datos</h4>
+        <main>
+            <section>
+                <form action="/register" method="POST" class="formregister"  enctype="multipart/form-data">
+                    <label> Nombre y Apellido</label>
+                    <input type="text" name="name" required placeholder="Nombre y apellido">
+                    <label>Email</label>
+                    <input type="email" name="email" required placeholder="Email">
+                    <label>Contraseña</label>
+                    <input type="password" name="password" required placeholder="Contraseña">
+                    <label>Confirmar contraseña</label>
+                    <input type="password" name="repassword" required placeholder="Confirmar Contraseña">
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" name="birth" required>
+                    <label>Seleccione Avatar</label>
+                    <input type="file" name="image">
+                    <p><a href='/login'>¿Ya tenés una cuenta? Iniciá sesión</a></p>
+                    <button type="submit">Crear cuenta</button>
+                </form>
+            </section>
+        </main>
+    </section>
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
+</div>
+</body>
+</html>

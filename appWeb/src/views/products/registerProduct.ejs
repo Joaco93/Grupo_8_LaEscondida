@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <!--HEAD-->
+  <%- include('../partials/head') %>
+  <body>
+  
+    <!-- Header -->
+    <%- include('../partials/header')%>
+
+    <!-- Page content -->
+    <section class="form-register">
+        <h4>Completa tus datos</h4>
+        <main>
+            <section>
+                <form action="/products/create" method="POST" class="formregister" enctype="multipart/form-data">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" required placeholder="Nombre de la bebida" id="name">
+                    <label for="description">Descripcion</label>
+                    <textarea type="text" name="descripcion" id="description"></textarea>
+                    <label for="product-image">Imagen de la bebida</label>
+                    <input type="file" name="product-image" id="product_image">
+                    <label for="category">Categoria</label>
+                    <select name ="category">
+                        <% for(let i = 0; i < categorias.length;i++) { %>
+                           <option value ="<%= categorias[i].idCategoria %>">
+                               <%= categorias[i].name %>
+                           </option>
+                        <% } %>
+                    </select>>
+                    <label for="size">Tamaño</label>
+                    <input type="text" name="size" required id="size">
+                    <label for="price">Precio</label>
+                    <input type="number" name="price" required id="price">
+
+                    <button type="submit">Crear Producto</button>
+                </form>
+            </section>
+        </main>
+    </section>
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
+</div>
+</body>
+</html>

@@ -1,0 +1,432 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #C4B7B4;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #285A71;
+}
+
+div.cart{
+    display: inline-block;
+    width: 20%;
+    flex-direction:column;
+    transition: all 05s;
+    vertical-align: top;
+}
+
+.caption{
+    width: 100%;
+    display:block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.fa-shopping-cart{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+div.cart :hover{
+   color: #000000;
+}
+
+div.logo{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.logo img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+div.user{
+    width: 20%;
+} 
+
+div.user ul{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items: flex-end;
+}
+  
+div.user ul li{
+    list-style-type: none;
+    margin: 5px 0px 5px 3px;  
+}
+  
+div.user ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+  
+.fa-user{
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+form.search{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 15px 0px;
+    width: 100%;
+}
+ 
+form.search input{
+    font-size: medium;
+    width: 50%;
+    border-radius: 5px;
+}
+ 
+.fa-search{
+    margin-left: 3px;
+    color: #ffffff;
+}
+
+main{
+    width: 95%;
+    margin: auto;
+}
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+    border-radius: 5px;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+    height: 60%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+    object-fit: contain;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+section{
+   width: 95%;
+   padding: 10px;
+   
+}
+
+section ul{
+   padding: 0;
+   margin: auto;
+   width: 30%;
+}
+
+section ul li,.footer-laEscondida ul li, .footer-shop ul li{
+    list-style: none;  
+}
+
+section ul div{
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 20px rgb(100, 100, 100);
+  border-radius: 5px;
+  transition: all 2s;  
+}
+
+section ul div :hover{
+    transform: scale(1.1);
+}
+
+section ul  div li a, div label a{
+    text-decoration: none;
+    color: #000000;
+}
+
+section ul div li img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+section ul label{
+    font-size: 15px;
+}
+
+.product-cerveza,.product-vinos,.product-licores{
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.product-cerveza label{
+   font-size: 12px;
+}
+
+.comentario{
+  font-size: 10px;
+  font-weight: lighter;
+  display: none;
+}
+
+footer{
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    border: solid 2px #000000;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-shop{
+    width: 20%;
+    margin: 0px 5px 5px 5px;
+    display: none;
+}
+  
+.footer-laEscondida{
+    width: 50%;
+}
+
+.footer-laEscondida h4{
+   font-size: 14px;
+}
+
+.footer-laEscondida ul li a{
+  font-size: 12px; 
+} 
+
+.footer-email{
+    width: 30%;
+    margin: 0px 5px 5px 5px;
+    display: none;
+}
+
+form.footer-email input{
+    font-size: medium;
+    width: 75%;
+    border-radius: 5px;
+}
+
+.footer-redesSociales{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+  
+footer div.footer-redesSociales img{
+    width: 32px;
+    height: 32px;
+}
+
+.footer-metodosDePago{
+  text-align: center;
+  display: flex;
+  border-top: solid 2px #000000;
+  padding: 2px;
+}
+
+.footer-metodosDePago h4{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-size: 14px;
+}
+
+.footer-metodosDePago h3{
+   font-size: 14px;
+}
+
+.copy-footer{
+    text-align: left;
+}
+
+.parrafo-footer{
+    line-height:1.5;
+    display: none;
+}
+
+.icon-metodosDePago{
+    background-color: #4A34EB;
+    border-radius: 5px;
+    color: #FBFCFC;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 360px) {
+    div.user ul{
+        left: -12px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 480px){
+    header{
+        padding: 20px;
+    }
+    
+    .product-cerveza label{
+        font-size: 15px;
+    }
+
+    p .comentario{
+        display: block;
+    }
+
+    .parrafo-footer{
+        display: block;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 550px){
+    div.cart{
+        width: 30%;
+        flex-direction:row;
+        justify-content: flex-start;
+     }
+
+    .fa-shopping-cart{
+        font-size: 50px;
+    }
+
+    div.logo{
+        width: 40%;
+    }
+
+    div.user{
+        width: 30%;
+    } 
+
+    div.user ul{
+        left: 50%;
+        font-size: 18px;
+    }
+
+    .fa-user{
+        font-size: 50px;
+    } 
+
+    form.search input{
+        font-size: medium;
+        width: 70%;
+        border-radius: 5px;
+    }
+
+    .footer-shop{
+        display: block;
+    }
+    
+    
+    .footer-laEscondida{
+       width: 20%;
+       margin: 0px 5px 5px 5px;
+    }
+    
+    .footer-laEscondida h4{
+        font-size: 16px;
+    }
+
+    .footer-shop ul li a,.footer-laEscondida ul li a{
+        font-size: 14px; 
+    }
+
+    .footer-email{
+      display: block;
+    }
+    
+    .footer-redesSociales{
+        width: 20%;
+        margin: 0px 5px 5px 5px;
+    }
+}
+
+@media (min-width: 761px) {
+    div.user ul{
+        left: 70%;
+    }
+
+   /* .slider ul {
+        height: 400px;
+    }*/
+    section{
+      margin-bottom: 50px;
+    }
+
+    section ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .product-cerveza{
+        width: 30%;
+    }
+    
+    .product-vinos{
+        width: 30%;
+    }
+
+    .product-licores{
+       width: 30%;
+    }
+
+    .product-cerveza img,.product-vinos img,.product-licores img{
+       height: 250px;
+    }
+}
+
+@media (min-width: 1024px){
+    div.user ul{
+        left: 80%;
+    }
+}

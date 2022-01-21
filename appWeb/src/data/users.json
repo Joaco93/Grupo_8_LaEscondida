@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Anabel Ramirez",
+    "email": "anabel@laescondida.com",
+    "password": "$2a$10$1Qssz3w.Z1s0NKYhRkS6eOUlK7bbA03LXDfmpTlNVRYAQcGUe/j3u",
+    "fechaDeNacimiento": "1993-11-15",
+    "avatar": ""
+  },
+  {
+    "id": 2,
+    "name": "Lucas Montes ",
+    "email": "lucas@laescondida.com",
+    "password": "$2a$10$SgeEIHL.Zs204QvXWNKD8eg.BPIy1uOUFrVfHf4izh6S16.GxlAc2",
+    "fechaDeNacimiento": "1994-04-08",
+    "avatar": ""
+  },
+  {
+    "id": 3,
+<<<<<<< HEAD
+    "name": "Ignacio",
+    "email": "ignacio@laescondida.com",
+    "password": "$2b$10$IYk8arw9Qtt9OPS6z7pj7.MjDEBbsFUOORnWlWDLtEa.c2MEsu2si",
+    "fechaDeNacimiento": "1993-10-05",
+=======
+    "name": "Nicolas solop",
+    "email": "drcaballero25@gmail.com",
+    "password": "$2b$10$yj6vS/k2Df/xJTiN90v6reSt4j/gwxHVP3AS6MriHsfUiYi9vLLEi",
+    "fechaDeNacimiento": "2222-02-11",
+    "avatar": ""
+  },
+  {
+    "id": 4,
+    "name": "Maria del Rocio",
+    "email": "drcaballero25@gmail.com",
+    "password": "$2b$10$W/Y1Y0x7mrcTGAbrO355GeI/2V51I5yyRaN3RFa0j5bEhuKYQ0nUu",
+    "fechaDeNacimiento": "1991-02-28",
+>>>>>>> ba845fe21e4bb7bd1fe7aaaf16ead2ad633c9206
+    "avatar": ""
+  }
+]
