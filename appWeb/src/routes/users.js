@@ -22,7 +22,6 @@ const upload = multer({ storage: storage })
 router.get('/register',guestMiddleware ,userController.register);
 router.get('/login',guestMiddleware,userController.login);
 router.get("/profile",authMiddleware,userController.profile)
-router.get('/user/:id',userController.perfil);
 router.get('/user/:id/edit',userController.edit);
 router.get("/contact", userController.contact);
 router.get("/logout", userController.logout);

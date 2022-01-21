@@ -12,7 +12,6 @@ const controlador = {
     },
     createUser: function (req, res) {
         const validaciones = validationResult(req);
-        console.log(validaciones);
         if (validaciones.errors.length > 0) {
             res.render(path.resolve(__dirname, "../views/users/register.ejs"), {
                 errors: validaciones.mapped(),
@@ -66,6 +65,8 @@ const controlador = {
         res.render(path.resolve(__dirname, "../views/users/login.ejs"))
     },
     processLogin: function (req, res) {
+        console.log(req.body);
+        res.send("ingresaste");
         const validaciones = validationResult(req);
         console.log(validaciones);
         if (validaciones.errors.length > 0) {
@@ -118,14 +119,6 @@ const controlador = {
                 }
             }
         })
-    },
-    perfil: function (req, res) {
-        db.Usuarios.findByPk(req.params.id)
-            .then(function (usuario) {
-                res.render(path.resolve(__dirname, "../views/users/profile.ejs"), { usuario: usuario });
-            }).catch((error) => {
-                console.log(error)
-            })
     },
     edit: function (req, res) {
         db.Usuarios.findByPk(req.params.id)
