@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: sans-serif;
+}
+
+.message-sign-in {
+  font-weight: bold;
+  margin: 4px;
+  font-size: 24px;
+  text-align: center;
+}
+.main-form {
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+}
+.mail,
+.password {
+  margin: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 320px;
+}
+.text-danger {
+  color: #bf1304;
+  font-size: 14px;
+}
+.recordame {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+.sign-in-buttom {
+  margin: auto;
+  width: 320px;
+  background-color: #293771;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  color: #f2ede4;
+  padding: 10px;
+  border-radius: 10px;
+}
+.sign-in-tex {
+  text-align: center;
+  background-color:#293771;
+  font-weight: bold;
+  color: #f2ede4;
+  font-weight: bold;
+  border: none;
+}
+.p {
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+  font-size: 14px;
+  color: rgb(73, 70, 70);
+  text-align: center;
+  padding: 30px;
+}
+.dont-have {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.dont-have-low {
+  font-size: 15px;
+}
+.dont-have-low-color {
+  color: #293771;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.opciones-login__olvido-contraseña{
+  padding-right: 30px;
+}
+a{
+  color:#293771;
+}
