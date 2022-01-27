@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="en"></html>
-  <!--HEAD-->
-  <%- include('../partials/head.ejs') %>
-  <body>
-  
-    <!-- Header -->
-    <%- include('../partials/header')%>
 
-    <!-- Page content -->
-    <body>
-        <section class="form-login">
-            <h4>Iniciar sesión </h4>
-            <main>
-                <section>
-                    <form action="/" method="POST" class="formlogin">
-                        <label>Email</label>
-                        <input type="text" name="email" required placeholder="Tu dirección de correo">
-                        <label>Contraseña</label>
-                        <input type="password" name="password" required placeholder="Contraseña">
-                        <p><a href=#>¿Olvidaste tu contraseña?</a></p>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </section>
-            </main>
-        </section>
-        </body>
+  <%- include('../partials/head') %>
+  <body>
+    <link rel="stylesheet" href="/css/login-style.css" />
+    <title>La Escondida- Login</title>
+  </head>
+  <body>
+
+    <%- include('../partials/header') %>
+
+<p class = "message-sign-in">Iniciar sesión </p>
+</div>
+<form action="/users/login" method="POST" class="main-form">
+    <label>Email</label>
+    <div>
+    <input    
+    type="email"
+    name="email"
+    placeholder="Email"
+    class="mail"
+    value="<%= (locals.errors &&  old)? old: '' %>"
+                  />
+                </div>
+                <% if (locals.errors && errors.email) { %>
+                  <div class="text-danger">
+                    <%= errors.email.msg %>
+                </div>
+                <% } %>
+                <label>Contraseña</label>
+                <div>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Contraseña"
+                    class="password"
+                    value=""
+                  />
+                </div>
+                <div class="sign-in-buttom">
+                  <button type="submit" name="sign-in" class="sign-in-tex">
+                    Ingresar
+                  </button>
+                </div>
+                <div class="recordame"> 
+                    <input type="checkbox" name="recordarme" value="recordarme">
+                    <label for="recordame">Recordarme</label>
+                    <div class="opciones-login">
+                        <a href="#" class="opciones-login__olvido-contraseña">¿Olvidó su contraseña?</a>         
+                    </div>  
+                </div>
+                <div class="dont-have">
+                  <p class="dont-have-low">No tienes cuenta?</p>
+                  <a href="/users/register"><p class="dont-have-low-color">Registrarse</p></a>
+                </div>
+              </form>
+          
     <!-- Footer -->
  <%- include('../partials/footer') %>
 </div>
